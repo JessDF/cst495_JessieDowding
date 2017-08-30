@@ -9,3 +9,8 @@ CST 495 iOS 10 and Swift 3
 ##### Chapter 2 - The Swift Language 
 * Learning Swift commands, loops, conditionals
 * Learned enumerators, standard types, and optionals
+
+##### raywenderlich.com - CocoaPods Tutorial 
+* Learn how to add CocoaPods, Semantic Versioning
+* Added pods: Alamofire and MBProgressHUD
+* Worked with a sample project - IceCream Shop
