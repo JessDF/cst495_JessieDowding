@@ -14,3 +14,8 @@ CST 495 iOS 10 and Swift 3
 * Learn how to add CocoaPods, Semantic Versioning
 * Added pods: Alamofire and MBProgressHUD
 * Worked with a sample project - IceCream Shop
+
+##### Chapter 3 - Views and the View Hierarchy
+* Learn how work with the UIView learning View Basics
+* How to work with Auto Layouts and the view Hierarchy
+* Project "WorldTrotter" will be working with it up to Chap 5
