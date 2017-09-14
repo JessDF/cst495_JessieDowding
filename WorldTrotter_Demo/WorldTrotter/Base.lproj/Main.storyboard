@@ -53,13 +53,14 @@
                                 </constraints>
                                 <color key="textColor" red="0.7425753705965461" green="0.77872599817128918" blue="0.77158611047161896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="farenheitFieldChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="A76-nK-sIv"/>
                                 </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="szY-aL-7Pc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="4Y2-jh-0jd"/>
                             <constraint firstItem="jBw-Q4-y0f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Am9-XW-pf3"/>
@@ -73,12 +74,20 @@
                             <constraint firstItem="jBw-Q4-y0f" firstAttribute="top" secondItem="szY-aL-7Pc" secondAttribute="bottom" constant="28" id="wBY-ns-fxG"/>
                             <constraint firstItem="ZwX-vX-yFg" firstAttribute="top" secondItem="Mtq-AH-dEx" secondAttribute="bottom" constant="8" symbolic="YES" id="zhJ-F0-MJn"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="sHC-Iq-6SO" appends="YES" id="v19-TF-4KT"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="celsiusLabel" destination="ZwX-vX-yFg" id="YdU-Qp-sLY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="sHC-Iq-6SO">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="9aF-Fs-wn1"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="116" y="99.400299850074973"/>
         </scene>
