@@ -8,14 +8,22 @@
 
 import UIKit
 
-class ConversionViewController: UIViewController {
+class ConversionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
+    
     var fahrenheitValue: Measurement<UnitTemperature>? {
         
         didSet {
             updateCelsiusLabel();
         }
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("Current text: \(textField.text)");
+        print("Replacement text: \(string)");
+        
+        return true;
     }
     
     let numberFormatter: NumberFormatter = {
@@ -59,4 +67,5 @@ class ConversionViewController: UIViewController {
         super.viewDidLoad();
         updateCelsiusLabel();
     }
+    
 }
