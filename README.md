@@ -29,3 +29,7 @@ CST 495 iOS 10 and Swift 3
 * UITabBar Controller
 * Loading and Appearing Views
 * Interacting with View Controllers and Their Views
+
+##### Chapter 6 - Programmatic Views
+* Create View Programmatically
+* Programmatic Constraints and Controls
