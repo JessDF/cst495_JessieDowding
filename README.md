@@ -23,3 +23,9 @@ CST 495 iOS 10 and Swift 3
 * Learned how to raise and lower a keyboard
 * How to edit text fields
 * Learned about Delegations
+
+##### Chapter 5 - View Controllers
+* Setting the Initial View Controller
+* UITabBar Controller
+* Loading and Appearing Views
+* Interacting with View Controllers and Their Views
