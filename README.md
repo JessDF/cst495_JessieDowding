@@ -18,3 +18,8 @@ CST 495 iOS 10 and Swift 3
 * Learn how work with the UIView learning View Basics
 * How to work with Auto Layouts and the view Hierarchy
 * Project "WorldTrotter" will be working with it up to Chap 5
+
+##### Chapter 4 - Text Input and Delegation
+* Learned how to raise and lower a keyboard
+* How to edit text fields
+* Learned about Delegations
