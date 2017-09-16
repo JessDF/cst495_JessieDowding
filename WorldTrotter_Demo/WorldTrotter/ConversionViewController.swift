@@ -20,10 +20,18 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        print("Current text: \(textField.text)");
-        print("Replacement text: \(string)");
+        //print("Current text: \(textField.text)");
+        //print("Replacement text: \(string)");
+        //return true;
         
-        return true;
+        let existingTextHasDecimalSearator = textField.text?.range(of: ".")
+        let replacementTextHasDecimalSeparator = string.range(of: ".")
+        
+        if existingTextHasDecimalSearator != nil, replacementTextHasDecimalSeparator != nil {
+            return false;
+        } else {
+            return true;
+        }
     }
     
     let numberFormatter: NumberFormatter = {
@@ -55,7 +63,8 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
             fahrenheitValue = Measurement(value: value, unit: .fahrenheit);
         }
         else {
-            celsiusLabel.text = "???"
+            //celsiusLabel.text = "???"
+            fahrenheitValue = nil
         }
     }
     

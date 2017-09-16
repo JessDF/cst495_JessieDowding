@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A264c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -80,12 +80,13 @@
                     </view>
                     <connections>
                         <outlet property="celsiusLabel" destination="ZwX-vX-yFg" id="YdU-Qp-sLY"/>
+                        <outlet property="textField" destination="szY-aL-7Pc" id="qNn-tJ-sqK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="sHC-Iq-6SO">
                     <connections>
-                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="9aF-Fs-wn1"/>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="D4n-wL-FNm"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
