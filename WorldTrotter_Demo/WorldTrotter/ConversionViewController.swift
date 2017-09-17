@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PCLBlurEffectAlert
 
 class ConversionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var celsiusLabel: UILabel!
@@ -17,6 +18,13 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         didSet {
             updateCelsiusLabel();
         }
+    }
+    @IBAction func callAlert(_ sender: Any) {
+        let alert = PCLBlurEffectAlert.Controller(title: "Try Me: Alert", message: "Welcome to my Demo 1 App", effect: UIBlurEffect(style: .dark), style: .alert);
+        alert.show();
+        
+        let alertButtn = PCLBlurEffectAlert.Action(title: "Cancel", style: .cancel, handler: nil);
+        alert.addAction(alertButtn);
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

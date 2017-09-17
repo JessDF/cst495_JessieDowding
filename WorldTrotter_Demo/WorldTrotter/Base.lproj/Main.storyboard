@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c1l-Ci-lw3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A264c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c1l-Ci-lw3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -49,7 +49,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="value" textAlignment="center" minimumFontSize="70" translatesAutoresizingMaskIntoConstraints="NO" id="szY-aL-7Pc">
                                 <rect key="frame" x="73" y="144" width="229" height="67"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="7kp-L3-Hmq"/>
+                                    <constraint firstAttribute="height" constant="67" id="yc5-2e-BX3"/>
                                 </constraints>
                                 <color key="textColor" red="0.7425753705965461" green="0.77872599817128918" blue="0.77158611047161896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
@@ -58,21 +58,30 @@
                                     <action selector="farenheitFieldChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="A76-nK-sIv"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkJ-R3-JhG">
+                                <rect key="frame" x="161" y="85" width="52" height="30"/>
+                                <state key="normal" title="Try Me!"/>
+                                <connections>
+                                    <action selector="callAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kLp-98-BUQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="szY-aL-7Pc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="4Y2-jh-0jd"/>
-                            <constraint firstItem="jBw-Q4-y0f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Am9-XW-pf3"/>
-                            <constraint firstItem="szY-aL-7Pc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="BdT-9g-fHK"/>
-                            <constraint firstItem="szY-aL-7Pc" firstAttribute="centerX" secondItem="jBw-Q4-y0f" secondAttribute="centerX" id="E51-rv-ojy"/>
-                            <constraint firstItem="ZwX-vX-yFg" firstAttribute="centerX" secondItem="Hpi-JO-Zt6" secondAttribute="centerX" id="Jdw-qh-zei"/>
-                            <constraint firstItem="jBw-Q4-y0f" firstAttribute="centerX" secondItem="Mtq-AH-dEx" secondAttribute="centerX" id="Mkf-zM-bow"/>
-                            <constraint firstItem="Mtq-AH-dEx" firstAttribute="top" secondItem="jBw-Q4-y0f" secondAttribute="bottom" constant="24" id="VGc-Tn-M5o"/>
-                            <constraint firstItem="Hpi-JO-Zt6" firstAttribute="top" secondItem="ZwX-vX-yFg" secondAttribute="bottom" constant="8" symbolic="YES" id="Ydg-Rr-Ceb"/>
-                            <constraint firstItem="Mtq-AH-dEx" firstAttribute="trailing" secondItem="ZwX-vX-yFg" secondAttribute="trailing" id="qLU-3k-QFk"/>
-                            <constraint firstItem="jBw-Q4-y0f" firstAttribute="top" secondItem="szY-aL-7Pc" secondAttribute="bottom" constant="28" id="wBY-ns-fxG"/>
-                            <constraint firstItem="ZwX-vX-yFg" firstAttribute="top" secondItem="Mtq-AH-dEx" secondAttribute="bottom" constant="8" symbolic="YES" id="zhJ-F0-MJn"/>
+                            <constraint firstItem="szY-aL-7Pc" firstAttribute="top" secondItem="WkJ-R3-JhG" secondAttribute="bottom" constant="29" id="BJj-1u-4gQ"/>
+                            <constraint firstItem="Mtq-AH-dEx" firstAttribute="top" secondItem="jBw-Q4-y0f" secondAttribute="bottom" constant="24" id="GVs-Vp-rQg"/>
+                            <constraint firstItem="WkJ-R3-JhG" firstAttribute="centerX" secondItem="szY-aL-7Pc" secondAttribute="centerX" id="HFp-ct-OAe"/>
+                            <constraint firstItem="Hpi-JO-Zt6" firstAttribute="top" secondItem="ZwX-vX-yFg" secondAttribute="bottom" constant="8" symbolic="YES" id="OpA-rt-slT"/>
+                            <constraint firstItem="jBw-Q4-y0f" firstAttribute="top" secondItem="szY-aL-7Pc" secondAttribute="bottom" constant="28" id="QCT-ix-H7c"/>
+                            <constraint firstItem="WkJ-R3-JhG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="65" id="VGP-2D-Hom"/>
+                            <constraint firstItem="WkJ-R3-JhG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bzD-ro-KEg"/>
+                            <constraint firstItem="jBw-Q4-y0f" firstAttribute="centerX" secondItem="Mtq-AH-dEx" secondAttribute="centerX" id="hCn-ht-ARP"/>
+                            <constraint firstItem="Mtq-AH-dEx" firstAttribute="trailing" secondItem="ZwX-vX-yFg" secondAttribute="trailing" id="hFb-B3-zgV"/>
+                            <constraint firstItem="ZwX-vX-yFg" firstAttribute="top" secondItem="Mtq-AH-dEx" secondAttribute="bottom" constant="8" symbolic="YES" id="nYO-Ur-c2Z"/>
+                            <constraint firstItem="szY-aL-7Pc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="57" id="sxq-o6-Whr"/>
+                            <constraint firstItem="szY-aL-7Pc" firstAttribute="centerX" secondItem="jBw-Q4-y0f" secondAttribute="centerX" id="u33-5R-rfw"/>
+                            <constraint firstItem="ZwX-vX-yFg" firstAttribute="centerX" secondItem="Hpi-JO-Zt6" secondAttribute="centerX" id="zHw-Xs-e93"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="sHC-Iq-6SO" appends="YES" id="v19-TF-4KT"/>
@@ -109,6 +118,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="c1l-Ci-lw3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="RgG-Bx-TVJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

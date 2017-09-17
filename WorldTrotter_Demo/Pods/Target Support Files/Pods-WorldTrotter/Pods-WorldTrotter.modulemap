@@ -1,0 +1,6 @@
+framework module Pods_WorldTrotter {
+  umbrella header "Pods-WorldTrotter-umbrella.h"
+
+  export *
+  module * { export * }
+}
