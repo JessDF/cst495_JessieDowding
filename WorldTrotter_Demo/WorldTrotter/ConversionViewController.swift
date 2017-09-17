@@ -8,12 +8,15 @@
 
 import UIKit
 import PCLBlurEffectAlert
+import JDOWDINGCOCOA
 
 class ConversionViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var textField: UITextField!
     
-    var fahrenheitValue: Measurement<UnitTemperature>? {
+    //private var fooRoundedImageView: RoundedUIImageView;
+    
+   var fahrenheitValue: Measurement<UnitTemperature>? {
         
         didSet {
             updateCelsiusLabel();

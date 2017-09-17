@@ -1,0 +1,6 @@
+framework module JDOWDINGCOCOA {
+  umbrella header "JDOWDINGCOCOA-umbrella.h"
+
+  export *
+  module * { export * }
+}

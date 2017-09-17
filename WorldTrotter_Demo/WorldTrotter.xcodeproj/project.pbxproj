@@ -16,6 +16,7 @@
 		4015B5231F5C8E69005342F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4015B5211F5C8E69005342F2 /* LaunchScreen.storyboard */; };
 		4015B52E1F5C8E6A005342F2 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015B52D1F5C8E6A005342F2 /* WorldTrotterTests.swift */; };
 		4015B5391F5C8E6A005342F2 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015B5381F5C8E6A005342F2 /* WorldTrotterUITests.swift */; };
+		409584931F6F31E70063647E /* JDOWDINGCOCOA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409584921F6F31E70063647E /* JDOWDINGCOCOA.framework */; };
 		8DE3BD60CF2E1C801751B33D /* Pods_WorldTrotter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63F1E28DD98F3C5C72402AD /* Pods_WorldTrotter.framework */; };
 		EE3A7A681F6DBFCF006D03B5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3A7A671F6DBFCF006D03B5 /* MapKit.framework */; };
 		EE3A7A6A1F6DC471006D03B5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3A7A691F6DC471006D03B5 /* MapViewController.swift */; };
@@ -54,6 +55,8 @@
 		4015B5341F5C8E6A005342F2 /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4015B5381F5C8E6A005342F2 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		4015B53A1F5C8E6A005342F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		404283081F6F1D6100D5DA97 /* iOSViews.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iOSViews.framework; path = "../../../Library/Developer/Xcode/DerivedData/WorldTrotter-gvdzdjrtwocfudcgvindgdxgpeok/Build/Products/Debug-iphonesimulator/iOSViews/iOSViews.framework"; sourceTree = "<group>"; };
+		409584921F6F31E70063647E /* JDOWDINGCOCOA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JDOWDINGCOCOA.framework; path = "../../../Library/Developer/Xcode/DerivedData/WorldTrotter-gvdzdjrtwocfudcgvindgdxgpeok/Build/Products/Debug-iphonesimulator/JDOWDINGCOCOA/JDOWDINGCOCOA.framework"; sourceTree = "<group>"; };
 		57055C4C0C53D00A03827F1D /* Pods_WorldTrotterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorldTrotterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FB6E41EDA0064CDB2804B9 /* Pods-WorldTrotterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldTrotterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldTrotterUITests/Pods-WorldTrotterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8868C66D88746F006432CB28 /* Pods-WorldTrotter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldTrotter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorldTrotter/Pods-WorldTrotter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				409584931F6F31E70063647E /* JDOWDINGCOCOA.framework in Frameworks */,
 				EE3A7A681F6DBFCF006D03B5 /* MapKit.framework in Frameworks */,
 				8DE3BD60CF2E1C801751B33D /* Pods_WorldTrotter.framework in Frameworks */,
 			);
@@ -164,6 +168,8 @@
 		EE3A7A661F6DBFCF006D03B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				409584921F6F31E70063647E /* JDOWDINGCOCOA.framework */,
+				404283081F6F1D6100D5DA97 /* iOSViews.framework */,
 				EE3A7A671F6DBFCF006D03B5 /* MapKit.framework */,
 				C63F1E28DD98F3C5C72402AD /* Pods_WorldTrotter.framework */,
 				BED69A353BF8544FE9F852AD /* Pods_WorldTrotterTests.framework */,
@@ -351,10 +357,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WorldTrotter/Pods-WorldTrotter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JDOWDINGCOCOA/JDOWDINGCOCOA.framework",
 				"${BUILT_PRODUCTS_DIR}/PCLBlurEffectAlert/PCLBlurEffectAlert.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JDOWDINGCOCOA.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PCLBlurEffectAlert.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
