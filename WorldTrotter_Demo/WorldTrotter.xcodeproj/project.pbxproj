@@ -17,7 +17,7 @@
 		4015B52E1F5C8E6A005342F2 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015B52D1F5C8E6A005342F2 /* WorldTrotterTests.swift */; };
 		4015B5391F5C8E6A005342F2 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015B5381F5C8E6A005342F2 /* WorldTrotterUITests.swift */; };
 		4060D4991F6F62DE00C5C97F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4060D4981F6F62DE00C5C97F /* Assets.swift */; };
-		409584931F6F31E70063647E /* JDOWDINGCOCOA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409584921F6F31E70063647E /* JDOWDINGCOCOA.framework */; };
+		4079B89C1F6F869400F1E1AE /* JDOWDINGCOCOA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409584921F6F31E70063647E /* JDOWDINGCOCOA.framework */; };
 		8DE3BD60CF2E1C801751B33D /* Pods_WorldTrotter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63F1E28DD98F3C5C72402AD /* Pods_WorldTrotter.framework */; };
 		EE3A7A681F6DBFCF006D03B5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3A7A671F6DBFCF006D03B5 /* MapKit.framework */; };
 		EE3A7A6A1F6DC471006D03B5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3A7A691F6DC471006D03B5 /* MapViewController.swift */; };
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				409584931F6F31E70063647E /* JDOWDINGCOCOA.framework in Frameworks */,
+				4079B89C1F6F869400F1E1AE /* JDOWDINGCOCOA.framework in Frameworks */,
 				EE3A7A681F6DBFCF006D03B5 /* MapKit.framework in Frameworks */,
 				8DE3BD60CF2E1C801751B33D /* Pods_WorldTrotter.framework in Frameworks */,
 			);
