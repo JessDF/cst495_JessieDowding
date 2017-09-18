@@ -1,40 +1,19 @@
 # cst495_JessieDowding
 CST 495 iOS 10 and Swift 3
 
-#### Assignments
-##### Chapter 1 - A Simple iOS Application
-* Creation of a three question quiz app
+## Demo1 - WorldTrotter
+##### Requirements
+* Make a storyboard with at least 2 controllers and at least 1 segue
+* Make a separate branch for this demo in your git repo, and label the branch, "Demo1"
+* Controllers should have different types of views
+* Make a view controller that responds to at least one action
+* Alerts:
+    - Present an alert without feedback
+    - Alert with feedback and update a view with that feedback
+* Use an UIImageView and register the image as an image asset
+* Create a simple app icon (or copy one) and make an app icon set
+* Make your own Cocoapod with a public repository that includes something simple
 
-##### Chapter 2 - The Swift Language 
-* Learning Swift commands, loops, conditionals
-* Learned enumerators, standard types, and optionals
-
-##### raywenderlich.com - CocoaPods Tutorial 
-* Learn how to add CocoaPods, Semantic Versioning
-* Added pods: Alamofire and MBProgressHUD
-* Worked with a sample project - IceCream Shop
-
-##### Chapter 3 - Views and the View Hierarchy
-* Learn how work with the UIView learning View Basics
-* How to work with Auto Layouts and the view Hierarchy
-* Project "WorldTrotter" will be working with it up to Chap 6
-
-##### Chapter 4 - Text Input and Delegation
-* Learned how to raise and lower a keyboard
-* How to edit text fields
-* Learned about Delegations
-
-##### Chapter 5 - View Controllers
-* Setting the Initial View Controller
-* UITabBar Controller
-* Loading and Appearing Views
-* Interacting with View Controllers and Their Views
-
-##### Chapter 6 - Programmatic Views
-* Create View Programmatically
-* Programmatic Constraints and Controls
-
-##### Demo 1 - Information
+##### Information for Cocoapod
 * Custom CocoaPod: cocoapods.org/pods/JDOWDINGCOCOA
 * GitHub for CocoaPod: https;//github.com/JessDF/JDOWDINGCOCOA
-* Project: WorldTrotter_Demo
