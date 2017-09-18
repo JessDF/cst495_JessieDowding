@@ -22,8 +22,26 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
             updateCelsiusLabel();
         }
     }
+
+    @IBAction func alertBackground(_ sender: Any) {
+        let alert = PCLBlurEffectAlert.Controller(title: "Background", message: "Do you want to chang background?", effect: UIBlurEffect(style: .dark), style: .alert);
+        alert.show();
+        let alertButtn1 = PCLBlurEffectAlertAction(title: "Purple", style: .default){
+            _ in
+            self.view.backgroundColor = UIColor(red: 227/255, green: 192/255, blue: 249/255, alpha: 1);
+        }
+        let alertButtn2 = PCLBlurEffectAlert.Action(title: "Original", style: .default){
+            _ in
+            self.view.backgroundColor = UIColor(red: 245/255, green: 244/255, blue: 241/255, alpha: 1);
+        }
+
+        alert.addAction(alertButtn1);
+        alert.addAction(alertButtn2);
+    }
     @IBAction func callAlert(_ sender: Any) {
         let alert = PCLBlurEffectAlert.Controller(title: "Try Me: Alert", message: "Welcome to my Demo 1 App", effect: UIBlurEffect(style: .dark), style: .alert);
+        
+        alert.addImageView(with: Assets.image.imgCat);
         alert.show();
         
         let alertButtn = PCLBlurEffectAlert.Action(title: "Cancel", style: .cancel, handler: nil);

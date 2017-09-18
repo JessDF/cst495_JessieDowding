@@ -15,5 +15,5 @@ CST 495 iOS 10 and Swift 3
 * Make your own Cocoapod with a public repository that includes something simple
 
 ##### Information for Cocoapod
-* Custom CocoaPod: cocoapods.org/pods/JDOWDINGCOCOA
-* GitHub for CocoaPod: https;//github.com/JessDF/JDOWDINGCOCOA
+* Custom CocoaPod: [link](cocoapods.org/pods/JDOWDINGCOCOA)
+* GitHub for CocoaPod:[link](https://github.com/JessDF/JDOWDINGCOCOA)
