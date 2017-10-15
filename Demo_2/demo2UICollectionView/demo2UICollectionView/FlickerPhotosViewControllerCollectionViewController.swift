@@ -72,6 +72,17 @@ extension FlickrPhotosViewController {
         return searches[section].searchResults.count
     }
     
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionElementKindSectionHeader:
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "FlickrPhotoHeaderView", for: indexPath) as! FlickrPhotoHeaderView
+            headerView.label.text = searches[(indexPath as NSIndexPath).section].searchTerm
+            return headerView
+        default:
+            assert(false, "Unexpected element kind")
+        }
+    }
+    
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
