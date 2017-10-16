@@ -12,7 +12,7 @@ import Foundation
 class FlickrPhotoCellCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
+
     // MARK: - Properties
     override var isSelected: Bool {
         didSet {

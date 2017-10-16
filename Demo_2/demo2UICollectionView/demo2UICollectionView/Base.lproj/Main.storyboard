@@ -53,7 +53,7 @@
                                     <constraint firstItem="UJn-Ay-hfa" firstAttribute="leading" secondItem="LXr-f4-SI3" secondAttribute="leadingMargin" id="tSd-jv-9Nr"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="activityIndicator" destination="slg-fm-Ner" id="BAj-z9-bHY"/>
+                                    <outlet property="activityIndicator" destination="slg-fm-Ner" id="s9b-Hv-TPp"/>
                                     <outlet property="imageView" destination="UJn-Ay-hfa" id="hsN-DV-88C"/>
                                 </connections>
                             </collectionViewCell>
