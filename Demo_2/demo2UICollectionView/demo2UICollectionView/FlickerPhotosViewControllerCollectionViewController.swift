@@ -8,7 +8,8 @@
 
 import UIKit
 
-final class FlickrPhotosViewController: UICollectionViewController {
+final class FlickrPhotosViewController: UICollectionViewController
+{
     
     // MARK: - Properties
     fileprivate let reuseIdentifier = "FlickrCell"
@@ -17,6 +18,30 @@ final class FlickrPhotosViewController: UICollectionViewController {
     fileprivate var searches = [FlickrSearchResults]()
     fileprivate let flickr = Flickr()
     fileprivate let itemsPerRow: CGFloat = 3
+    var largePhotoIndexPath: IndexPath? {
+        didSet {
+            //2
+            var indexPaths = [IndexPath]()
+            if let largePhotoIndexPath = largePhotoIndexPath {
+                indexPaths.append(largePhotoIndexPath)
+            }
+            if let oldValue = oldValue {
+                indexPaths.append(oldValue)
+            }
+            //3
+            collectionView?.performBatchUpdates({
+                self.collectionView?.reloadItems(at: indexPaths)
+            }) { completed in
+                //4
+                if let largePhotoIndexPath = self.largePhotoIndexPath {
+                    self.collectionView?.scrollToItem(
+                        at: largePhotoIndexPath,
+                        at: .centeredVertically,
+                        animated: true)
+                }
+            }
+        }
+    }
 }
 
 // MARK: - Private
@@ -84,17 +109,53 @@ extension FlickrPhotosViewController {
     }
     
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
-    {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FlickrPhotoCellCollectionViewCell
-        //2
+    override func collectionView(_ collectionView: UICollectionView,
+                                 cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: reuseIdentifier, for: indexPath) as! FlickrPhotoCellCollectionViewCell
         let flickrPhoto = photoForIndexPath(indexPath)
-        cell.backgroundColor = UIColor.white
+        
+        //1
+        cell.activityIndicator.stopAnimating()
+        
+        //2
+        guard indexPath == largePhotoIndexPath else {
+            cell.imageView.image = flickrPhoto.thumbnail
+            return cell
+        }
+        
         //3
+        guard flickrPhoto.largeImage == nil else {
+            cell.imageView.image = flickrPhoto.largeImage
+            return cell
+        }
+        
+        //4
         cell.imageView.image = flickrPhoto.thumbnail
+        cell.activityIndicator.startAnimating()
+        
+        //5
+        flickrPhoto.loadLargeImage { loadedFlickrPhoto, error in
+            
+            //6
+            cell.activityIndicator.stopAnimating()
+            
+            //7
+            guard loadedFlickrPhoto.largeImage != nil && error == nil else {
+                return
+            }
+            
+            //8
+            if let cell = collectionView.cellForItem(at: indexPath) as? FlickrPhotoCellCollectionViewCell
+                , indexPath == self.largePhotoIndexPath  {
+                cell.imageView.image = loadedFlickrPhoto.largeImage
+            }
+        }
         
         return cell
     }
+
 }
 
 extension FlickrPhotosViewController : UICollectionViewDelegateFlowLayout {
@@ -113,5 +174,14 @@ extension FlickrPhotosViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return sectionInsets.left
+    }
+}
+
+//MARK: - UICollectionViewDelegate
+extension FlickrPhotosViewController {
+    
+    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath:IndexPath) -> Bool {
+        largePhotoIndexPath = largePhotoIndexPath == indexPath ? nil : indexPath
+        return false
     }
 }
