@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ALamofire
 
 class WeatherGetter {
     private let openWeatherMapBaseURL = "http://api.openweathermap.org/data/2.5/weather"

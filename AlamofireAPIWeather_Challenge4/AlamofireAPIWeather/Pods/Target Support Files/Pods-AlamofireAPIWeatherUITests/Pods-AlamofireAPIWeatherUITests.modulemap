@@ -1,0 +1,6 @@
+framework module Pods_AlamofireAPIWeatherUITests {
+  umbrella header "Pods-AlamofireAPIWeatherUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
