@@ -11,6 +11,7 @@ import UIKit
 class tableController: UITableViewController {
     
     private var todoItems = [ToDoItem]()
+    var refresher: UIRefreshControl!
     
     override func viewDidLoad()
     {
@@ -18,6 +19,12 @@ class tableController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.title = "To-Do"
+        
+        
+        refresher = UIRefreshControl()
+        refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refresher.addTarget(self, action: #selector(tableController.populate), for: UIControlEvents.valueChanged)
+        tableView.addSubview(refresher)
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(tableController.didTapAddItemButton(_:)))
         
@@ -162,6 +169,21 @@ class tableController: UITableViewController {
             todoItems.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .top)
         }
+    }
+    func populate() {
+        let randomNum:UInt32 = arc4random_uniform(100)
+        let value = String(Int(randomNum))
+            
+        // The index of the new item will be the current item count
+        let newIndex = todoItems.count
+            
+        // Create new item and add it to the todo items list
+        todoItems.append(ToDoItem(title: value))
+        
+        // Tell the table view a new row has been created
+        tableView.insertRows(at: [IndexPath(row: newIndex, section: 0)], with: .top)
+        tableView.reloadData()
+        refresher.endRefreshing()
     }
 }
 
