@@ -71,6 +71,7 @@ final class FlickrPhotosViewController: UICollectionViewController {
             navigationItem.setRightBarButtonItems([shareButton,sharingDetailItem], animated: true)
         }
     }
+
     
     @IBAction func share(_ sender: UIBarButtonItem) {
         guard !searches.isEmpty else {

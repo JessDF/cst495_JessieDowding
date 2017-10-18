@@ -19,6 +19,8 @@
 		4071C3381F92796100A7266D /* demo2UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4071C3371F92796100A7266D /* demo2UICollectionViewTests.swift */; };
 		4071C3431F92796100A7266D /* demo2UICollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4071C3421F92796100A7266D /* demo2UICollectionViewUITests.swift */; };
 		4071C3511F927CCB00A7266D /* FlickerPhotosViewControllerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4071C3501F927CCB00A7266D /* FlickerPhotosViewControllerCollectionViewController.swift */; };
+		40D3907F1F96EB54005115BB /* tableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D3907E1F96EB54005115BB /* tableController.swift */; };
+		40D390811F96EC0C005115BB /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D390801F96EC0C005115BB /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		4071C3421F92796100A7266D /* demo2UICollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo2UICollectionViewUITests.swift; sourceTree = "<group>"; };
 		4071C3441F92796100A7266D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4071C3501F927CCB00A7266D /* FlickerPhotosViewControllerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickerPhotosViewControllerCollectionViewController.swift; sourceTree = "<group>"; };
+		40D3907E1F96EB54005115BB /* tableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableController.swift; sourceTree = "<group>"; };
+		40D390801F96EC0C005115BB /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				405568491F92B7BC009467B3 /* FlickrSearchResults.swift */,
 				4055684D1F92C0DC009467B3 /* FlickrPhotoCellCollectionViewCell.swift */,
 				400335321F92E18500220FED /* FlickrPhotoHeaderView.swift */,
+				40D3907E1F96EB54005115BB /* tableController.swift */,
+				40D390801F96EC0C005115BB /* ToDoItem.swift */,
 			);
 			path = demo2UICollectionView;
 			sourceTree = "<group>";
@@ -276,8 +282,10 @@
 			files = (
 				4071C3231F92796100A7266D /* AppDelegate.swift in Sources */,
 				4055684A1F92B7BC009467B3 /* FlickrSearchResults.swift in Sources */,
+				40D390811F96EC0C005115BB /* ToDoItem.swift in Sources */,
 				405568481F92B7A3009467B3 /* FlickrPhoto.swift in Sources */,
 				405568461F92B792009467B3 /* Flickr.swift in Sources */,
+				40D3907F1F96EB54005115BB /* tableController.swift in Sources */,
 				4055684E1F92C0DC009467B3 /* FlickrPhotoCellCollectionViewCell.swift in Sources */,
 				400335331F92E18500220FED /* FlickrPhotoHeaderView.swift in Sources */,
 				4071C3511F927CCB00A7266D /* FlickerPhotosViewControllerCollectionViewController.swift in Sources */,
