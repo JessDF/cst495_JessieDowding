@@ -8,6 +8,8 @@
 
 import UIKit
 
+//UIScrollView, UICollectionView Challenge
+
 class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var severity: UITextField!
     @IBOutlet weak var type: UITextField!
