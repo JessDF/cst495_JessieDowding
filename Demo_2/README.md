@@ -15,3 +15,6 @@ Use the following list of features as your guide: <br>
     
 #### Sources
   - https://www.raywenderlich.com/136159/uicollectionview-tutorial-getting-started
+  - https://www.brunophilipe.com/blog/articles/swift-tutorial-mytodo/
+  - Pull to refresh: https://www.youtube.com/watch?v=sUGRDEZaDyQ
+  - https://www.appcoda.com/storyboard-tutorial-create-tab-bar-controller-and-web-view/
