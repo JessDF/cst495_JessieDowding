@@ -35,6 +35,10 @@ CST 495 iOS 10 and Swift 3
 * Programmatic Constraints and Controls
 
 #### Challenges
+* Challenge 1 - "?"
+* Challenge 2 - Delgation and Notification Challenge
+* Challenge 3 - UIScrollView, UICollectionView Challenge Page
+* Challenge 4 - Web Service and GCD Challenge Page
 
 #### Demos
 
@@ -42,6 +46,7 @@ CST 495 iOS 10 and Swift 3
 * Custom CocoaPod: cocoapods.org/pods/JDOWDINGCOCOA
 * GitHub for CocoaPod: https;//github.com/JessDF/JDOWDINGCOCOA
 * Project: WorldTrotter_Demo
+* Has it's own branch
 
 ##### Demo 2 - Information
 * Repository: https://github.com/JessDF/cst495_JessieDowding/tree/master/Demo_2
@@ -49,4 +54,4 @@ CST 495 iOS 10 and Swift 3
 
 ##### Demo 3 - Information
 * Repository: https://github.com/JessDF/cst495_JessieDowding/tree/master/Demo_3
-* Sources: See Readme w/in Demo_2 folder
+* Sources: See Readme w/in Demo_3 folder
