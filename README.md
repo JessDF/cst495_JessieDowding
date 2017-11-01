@@ -44,5 +44,9 @@ CST 495 iOS 10 and Swift 3
 * Project: WorldTrotter_Demo
 
 ##### Demo 2 - Information
-* Repository:
-* Sources:
+* Repository: https://github.com/JessDF/cst495_JessieDowding/tree/master/Demo_2
+* Sources: See Readme w/in Demo_2 folder
+
+##### Demo 3 - Information
+* Repository: https://github.com/JessDF/cst495_JessieDowding/tree/master/Demo_3
+* Sources: See Readme w/in Demo_2 folder
