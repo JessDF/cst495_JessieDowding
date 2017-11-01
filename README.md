@@ -34,7 +34,15 @@ CST 495 iOS 10 and Swift 3
 * Create View Programmatically
 * Programmatic Constraints and Controls
 
+#### Challenges
+
+#### Demos
+
 ##### Demo 1 - Information
 * Custom CocoaPod: cocoapods.org/pods/JDOWDINGCOCOA
 * GitHub for CocoaPod: https;//github.com/JessDF/JDOWDINGCOCOA
 * Project: WorldTrotter_Demo
+
+##### Demo 2 - Information
+* Repository:
+* Sources:
