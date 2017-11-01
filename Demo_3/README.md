@@ -15,3 +15,4 @@ Use the following list of features as your guide:
     
 #### Sources
   - https://github.com/kishikawakatsumi/KeychainAccess
+  - https://developer.apple.com/documentation/coredata/nsmanagedobject
