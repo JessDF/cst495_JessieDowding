@@ -16,3 +16,5 @@ Use the following list of features as your guide:
 #### Sources
   - https://github.com/kishikawakatsumi/KeychainAccess
   - https://developer.apple.com/documentation/coredata/nsmanagedobject
+  - https://www.raywenderlich.com/143128/background-modes-tutorial-getting-started
+  - https://www.raywenderlich.com/148513/grand-central-dispatch-tutorial-swift-3-part-1
