@@ -26,6 +26,8 @@ import AVFoundation
 
 class AudioViewController: UIViewController {
   
+  /* Music by Kevin Macleod from incompetch.com */
+  
   @IBOutlet var songLabel: UILabel!
   @IBOutlet var timeLabel: UILabel!
   lazy var player: AVQueuePlayer = self.makePlayer()

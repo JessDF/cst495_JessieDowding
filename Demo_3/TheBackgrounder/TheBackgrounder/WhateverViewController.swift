@@ -29,9 +29,14 @@ class WhateverViewController: UIViewController {
   var current = NSDecimalNumber.one
   var position: UInt = 1
   var updateTimer: Timer?
-  
+  var backgroundTask: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
   
   @IBOutlet var resultsLabel: UILabel!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    NotificationCenter.default.addObserver(self, selector: #selector(reinstateBackgroundTask), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+  }
   
   @IBAction func didTapPlayPause(_ sender: UIButton) {
     sender.isSelected = !sender.isSelected
@@ -40,10 +45,14 @@ class WhateverViewController: UIViewController {
       updateTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self,
                                          selector: #selector(calculateNextNumber), userInfo: nil, repeats: true)
       // register background task
+      registerBackgroundTask()
     } else {
       updateTimer?.invalidate()
       updateTimer = nil
       // end background task
+      if backgroundTask != UIBackgroundTaskInvalid {
+        endBackgroundTask()
+      }
     }
   }
   
@@ -61,7 +70,16 @@ class WhateverViewController: UIViewController {
     }
     
     let resultsMessage = "Position \(position) = \(current)"
-    resultsLabel.text = resultsMessage
+    
+    switch UIApplication.shared.applicationState {
+    case .active:
+      resultsLabel.text = resultsMessage
+    case .background:
+      print("App is background. next number = \(resultsMessage)")
+      print("Background time remaining = \(UIApplication.shared.backgroundTimeRemaining) seconds")
+    case .inactive:
+      break
+    }
     
   }
  
@@ -71,5 +89,23 @@ class WhateverViewController: UIViewController {
     position = 1
   }
   
+  func registerBackgroundTask() {
+    backgroundTask = UIApplication.shared.beginBackgroundTask { [weak self] in
+        self?.endBackgroundTask()
+    }
+    assert(backgroundTask != UIBackgroundTaskInvalid)
+  }
+  
+  func endBackgroundTask() {
+    print("Background task ended")
+    UIApplication.shared.endBackgroundTask(backgroundTask)
+    backgroundTask = UIBackgroundTaskInvalid
+  }
+  
+  func reinstateBackgroundTask() {
+    if updateTimer != nil && (backgroundTask == UIBackgroundTaskInvalid) {
+      registerBackgroundTask()
+    }
+  }
   
 }
