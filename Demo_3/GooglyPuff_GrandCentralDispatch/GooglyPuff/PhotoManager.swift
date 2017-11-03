@@ -66,6 +66,10 @@ class PhotoManager {
     }
   
   func downloadPhotosWithCompletion(_ completion: BatchPhotoDownloadingCompletionClosure?) {
+    
+    /* You should be wary of using dispatch groups on the main queue if you’re waiting synchronously for the completion of all work since you don’t want to hold up the main thread. 
+    */
+    
     DispatchQueue.global(qos: .userInitiated).async {
         var storedError: NSError?
         let downloadGroup = DispatchGroup()
@@ -78,16 +82,15 @@ class PhotoManager {
                                 _, error in
                                 if error != nil {
                                     storedError = error
-                                }
+                                }   
                                 downloadGroup.leave()
                             }   
                             PhotoManager.sharedManager.addPhoto(photo)
         }   
         
-        downloadGroup.wait()
-        DispatchQueue.main.async {
+        downloadGroup.notify(queue: DispatchQueue.main) {
             completion?(storedError)
-        }   
+        }
     }
   }
   
