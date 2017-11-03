@@ -96,6 +96,24 @@ class PhotoCollectionViewController: UICollectionViewController {
 private extension PhotoCollectionViewController {
   func showOrHideNavPrompt() {
     // Implement me!
+    
+    let delayInSeconds = 1.0
+    
+    /* DispatchQueue allows you to delay task execution.
+    Don't use it to solve reace conditions or timing bugs */
+    DispatchQueue.main.asyncAfter(deadline: .now() + delayInSeconds) {
+        let count = PhotoManager.sharedManager.photos.count
+        if count > 0 {
+            self.navigationItem.prompt = nil
+        } else {
+            self.navigationItem.prompt = "Add photos with faces to Googlyify them!"
+        }
+    }
+    /* Generally good choice to use asyncAfter in the main queue 
+       Use caution when using it w/in other queues.
+       Using asyncAfter vs Timer, for readability and b/c Timer 
+        is scheduled on run loops
+     */
   }
   
   func downloadImageAssets() {
