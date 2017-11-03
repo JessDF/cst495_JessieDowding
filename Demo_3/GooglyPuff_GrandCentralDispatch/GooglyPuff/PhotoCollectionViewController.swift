@@ -26,10 +26,30 @@ import Photos
 private let reuseIdentifier = "photoCell"
 private let backgroundImageOpacity: CGFloat = 0.1
 
+/* Dispatch Sources an basically be used to monitor for some type of event. Events can include Unix signals, file descriptors, Mach ports, VFS Nodes, and other obscure stuff.
+*/
+#if DEBUG
+var signal: DispatchSourceSignal?
+    private let setupSignalHandlerFor = { (_ object: AnyObject) -> Void in
+        let queue = DispatchQueue.main
+        signal =
+            DispatchSource.makeSignalSource(signal: Int32(SIGSTOP), queue: queue)
+        signal?.setEventHandler {
+            print("Hi, I am: \(object.description!)")
+        }
+        signal?.resume()
+}
+#endif
+
 class PhotoCollectionViewController: UICollectionViewController {
   // MARK: - Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    //Dispatch Sources
+    #if DEBUG
+        _ = setupSignalHandlerFor(self)
+    #endif
     
     // Background image setup
     let backgroundImageView = UIImageView(image: UIImage(named:"background"))
