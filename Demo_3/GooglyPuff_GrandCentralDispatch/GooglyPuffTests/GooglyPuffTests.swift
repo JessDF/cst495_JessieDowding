@@ -54,18 +54,41 @@ class GooglyPuffTests: XCTestCase {
     /* Semaphores are an old-school threading concept introduced to the world by the ever-so-humble Edsger W. Dijkstra. Semaphores are a complex topic because they build upon the intricacies of operating system functions.
     */
     
+    /*
+     //Semaphores and testing
     let url = URL(string: urlString)
-    let semaphore = DispatchSemaphore(value: 0) // 1
+    let semaphore = DispatchSemaphore(value: 0)
     let _ = DownloadPhoto(url: url!) {
         _, error in
         if let error = error {
             XCTFail("\(urlString) failed. \(error.localizedDescription)")
         }
-        semaphore.signal() // 2
+        semaphore.signal()
     }
     let timeout = DispatchTime.now() + .seconds(defaultTimeoutLengthInSeconds)
-    if semaphore.wait(timeout: timeout) == .timedOut { // 3
+    if semaphore.wait(timeout: timeout) == .timedOut {
         XCTFail("\(urlString) timed out")
+    } 
+    */
+    
+    
+    //Expectations and testing
+    let url = URL(string: urlString)
+    let downloadExpectation =
+        expectation(description: "Image downloaded from \(urlString)") 
+    let _ = DownloadPhoto(url: url!) {
+        _, error in
+        if let error = error {
+            XCTFail("\(urlString) failed. \(error.localizedDescription)")
+        }
+        downloadExpectation.fulfill()
     }
+    waitForExpectations(timeout: 10) {
+        error in
+        if let error = error {
+            XCTFail(error.localizedDescription)
+        }   
+    }
+    
   }
 }
