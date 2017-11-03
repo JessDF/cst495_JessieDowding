@@ -38,6 +38,11 @@ class WhateverViewController: UIViewController {
     NotificationCenter.default.addObserver(self, selector: #selector(reinstateBackgroundTask), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
   }
   
+  deinit {
+    NotificationCenter.default.removeObserver(self)
+  }
+
+  
   @IBAction func didTapPlayPause(_ sender: UIButton) {
     sender.isSelected = !sender.isSelected
     if sender.isSelected {
