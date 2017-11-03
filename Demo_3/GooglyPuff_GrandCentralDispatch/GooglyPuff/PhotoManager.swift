@@ -72,25 +72,40 @@ class PhotoManager {
     
     var storedError: NSError?
     let downloadGroup = DispatchGroup()
-    let addresses = [overlyAttachedGirlfriendURLString,
+    var addresses = [overlyAttachedGirlfriendURLString,
                      successKidURLString,
                      lotsOfFacesURLString]
-    let _ = DispatchQueue.global(qos: .userInitiated)
-    DispatchQueue.concurrentPerform(iterations: addresses.count) {
-        i in
-        let index = Int(i)
-        let address = addresses[index]
-        let url = URL(string: address)
+    addresses += addresses + addresses
+    var blocks: [DispatchWorkItem] = []
+    
+    for i in 0 ..< addresses.count {
         downloadGroup.enter()
-        let photo = DownloadPhoto(url: url!) {
-            _, error in
-            if error != nil {
-                storedError = error
+        let block = DispatchWorkItem(flags: .inheritQoS) {
+            let index = Int(i)
+            let address = addresses[index]
+            let url = URL(string: address)
+            let photo = DownloadPhoto(url: url!) {
+                _, error in
+                if error != nil {
+                    storedError = error
+                }
+                downloadGroup.leave()
             }
+            PhotoManager.sharedManager.addPhoto(photo)
+        }
+        blocks.append(block)
+        DispatchQueue.main.async(execute: block)
+    }
+    
+    // Cancel enqueued tasks from dispatch block objects
+    for block in blocks[3 ..< blocks.count] {
+        let cancel = arc4random_uniform(2)
+        if cancel == 1 {
+            block.cancel()
             downloadGroup.leave()
         }
-        PhotoManager.sharedManager.addPhoto(photo)
     }
+    
     downloadGroup.notify(queue: DispatchQueue.main) {
         completion?(storedError)
     }
