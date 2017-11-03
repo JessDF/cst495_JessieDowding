@@ -55,3 +55,9 @@ CST 495 iOS 10 and Swift 3
 ##### Demo 3 - Information
 * Repository: https://github.com/JessDF/cst495_JessieDowding/tree/master/Demo_3
 * Sources: See Readme w/in Demo_3 folder
+* Included in folder are two other projects that were used to learn about <br> Grand Central Dispatch and running items in the background.
+
+Note to self: <br>
+In Swift, any variable declared with the let keyword is considered a constant and is read-only and thread-safe. Declare the variable with the var keyword however, and it becomes mutable and not thread-safe unless the data type is designed to be so.
+
+The Swift collection types like Array and Dictionary are not thread-safe when declared mutable. Although many threads can read a mutable instance of Array simultaneously without issue, it’s not safe to let one thread modify the array while another is reading it. 
