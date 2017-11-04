@@ -12,43 +12,48 @@ import Alamofire
 class WeatherGetter {
     private let openWeatherMapBaseURL = "https://api.openweathermap.org/data/2.5/weather"
     private let openWeatherMapAPIKey = "1f503f7f44c507605f4904ea08bf0986"
+    private var _date: Double?
+    private var _temp: String?
+    private var _location: String?
+    private var _weather: String?
+    typealias JSONStandard = Dictionary<String, AnyObject>
     
-    /*static func fetchImages(search term:String?, completion: @escaping ([ApiDictionary]?, Error?) -> Void) {
-        guard
-            let searchTerm = term,
-            let encodedSearchTerm = searchTerm.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
-        else {
-            completion(nil, ApiError.badInputs)
-            return
-        }
-    }*/
-    func getWeather(city: String) {
-        let url = "\(openWeatherMapBaseURL)?APPID=\(openWeatherMapAPIKey)&q=\(city)"
-        //let requestQueue = DispatchQueue(label: "com.test.api", qos: .default, attributes: .concurrent)
+    
+    var date: String {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM.dd.yyyy"
+        return (_date != nil) ? "Today, \(formatter.string(from: date))" : "Date Invalid"
+    }
+    
+    var temp: String {
+        return _temp ?? "0 °C"
+    }
+    
+    var location: String {
+        return _location ?? "Location Invalid"
+    }
+    
+    var weather: String {
+        return _weather ?? "Weather Invalid"
+    }
+    
+    func downloadData(completed: @escaping ()-> ()) {
+        let url = "\(openWeatherMapBaseURL)?APPID=\(openWeatherMapAPIKey)&q=Marina"
         
-        Alamofire.request(url)
-            //method: .get,
-            //encoding: JSONEncoding.default)
-            .validate()
-            .responseJSON{(response) -> Void in
-                let result = response.result
-                print("Response value \(result)")
-                print("Output \(result.value)")
+        Alamofire.request(url).responseJSON(completionHandler: {
+            response in
+            let result = response.result
+            
+            if let dict = result.value as? JSONStandard, let main = dict["main"] as? JSONStandard, let temp = main["temp"] as? Double, let weatherArray = dict["weather"] as? [JSONStandard], let weather = weatherArray[0]["main"] as? String, let name = dict["name"] as? String, let sys = dict["sys"] as? JSONStandard, let country = sys["country"] as? String, let dt = dict["dt"] as? Double {
                 
+                self._temp = String(format: "%.0f °F", (temp - 273.15) * 9/5 + 32)
+                self._weather = weather
+                self._location = "\(name), \(country)"
+                self._date = dt
             }
-            /*.responseJSON(queue: requestQueue) { (respones) -> Void in
-                guard response.result.isSuccess else {
-                    print("Error while fetching remote rooms: \(response.result.error)")
-                    completion(nil)
-                    return
-                }
-                guard let value = response.result.value as? [String: Any], let rows = value["rows"] as? [[String: Any]] else {
-                    print("Malformed data recieved")
-                    completion(nil)
-                    return
-                }
-                completion(photos, nil)
-        }*/
-        
+            
+            completed()
+        })
     }
 }

@@ -9,17 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var tempLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var weatherLabel: UILabel!
+    
+    var weather = WeatherGetter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let weather = WeatherGetter()
-        weather.getWeather(city: "Marina")
+        
+        weather.downloadData {
+            self.updateUI()
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateUI() {
+        dateLabel.text = weather.date
+        tempLabel.text = "\(weather.temp)"
+        locationLabel.text = weather.location
+        weatherLabel.text = weather.weather
     }
 
 
