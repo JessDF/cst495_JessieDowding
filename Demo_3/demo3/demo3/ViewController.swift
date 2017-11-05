@@ -17,17 +17,27 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var weatherImage: UIImageView!
     
+    let weather = WeatherGetter()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let weather = WeatherGetter()
-        weather.getWeather(city: "Marina")
+        weather.getWeather(city: "Marina"){
+         self.updateUI()
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func updateUI() {
+        dateLabel.text = weather.date
+        tempLabel.text = "\(weather.temp)"
+        locationLabel.text = weather.location
+        weatherLabel.text = weather.weather
     }
     
     
