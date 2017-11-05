@@ -18,6 +18,7 @@
 		408A9D181F951A2E009C4A7D /* WeatherGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408A9D171F951A2E009C4A7D /* WeatherGetter.swift */; };
 		4D9081C9D6103579D72F2592 /* Pods_AlamofireAPIWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955FDE147F580797CF28ABCD /* Pods_AlamofireAPIWeather.framework */; };
 		6D71612670E40C1804A6C51A /* Pods_AlamofireAPIWeatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E49C1D1A4097307B42D6257 /* Pods_AlamofireAPIWeatherUITests.framework */; };
+		EE8660221FAE6D2C008C11D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8660211FAE6D2C008C11D2 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		91779B4447DAD7A578874268 /* Pods_AlamofireAPIWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireAPIWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		934B4D6F35BF62E77E368F40 /* Pods-AlamofireAPIWeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireAPIWeatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireAPIWeatherUITests/Pods-AlamofireAPIWeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		955FDE147F580797CF28ABCD /* Pods_AlamofireAPIWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireAPIWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8660211FAE6D2C008C11D2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AlamofireAPIWeather-alxmrxvfulvoafauyjftfcczhzpv/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8660221FAE6D2C008C11D2 /* Alamofire.framework in Frameworks */,
 				4D9081C9D6103579D72F2592 /* Pods_AlamofireAPIWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +97,7 @@
 		168A9D2ACF5BF7023451EFEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE8660211FAE6D2C008C11D2 /* Alamofire.framework */,
 				955FDE147F580797CF28ABCD /* Pods_AlamofireAPIWeather.framework */,
 				91779B4447DAD7A578874268 /* Pods_AlamofireAPIWeatherTests.framework */,
 				2E49C1D1A4097307B42D6257 /* Pods_AlamofireAPIWeatherUITests.framework */,
@@ -716,6 +720,7 @@
 				408A9D101F9516D2009C4A7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		408A9D111F9516D2009C4A7D /* Build configuration list for PBXNativeTarget "AlamofireAPIWeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -724,6 +729,7 @@
 				408A9D131F9516D2009C4A7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		408A9D141F9516D2009C4A7D /* Build configuration list for PBXNativeTarget "AlamofireAPIWeatherUITests" */ = {
 			isa = XCConfigurationList;
@@ -732,6 +738,7 @@
 				408A9D161F9516D2009C4A7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
