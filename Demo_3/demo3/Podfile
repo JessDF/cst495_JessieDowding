@@ -10,6 +10,9 @@ target 'demo3' do
   # Pods for Alamofire
   pod 'Alamofire', '~>4.2.0'
 
+  # Pods for Keychain
+  pod ‘SwiftKeychainWrapper’
+
   target 'demo3Tests' do
     inherit! :search_paths
     # Pods for testing

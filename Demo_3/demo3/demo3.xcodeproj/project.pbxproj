@@ -16,6 +16,7 @@
 		40D532701FAA27820026DB32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D5326E1FAA27820026DB32 /* LaunchScreen.storyboard */; };
 		40D5327B1FAA27830026DB32 /* demo3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D5327A1FAA27830026DB32 /* demo3Tests.swift */; };
 		40D532861FAA27830026DB32 /* demo3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D532851FAA27830026DB32 /* demo3UITests.swift */; };
+		40F057991FAFC833007EE43B /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F057981FAFC833007EE43B /* SwiftKeychainWrapper.framework */; };
 		62B10DCC5E51CA73B159EE42 /* Pods_demo3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42F5C22A377B1075BD14B02 /* Pods_demo3UITests.framework */; };
 		A1E481DA13F266EBBCFFE75E /* Pods_demo3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7616FE5DC41B8BC9D6C7614 /* Pods_demo3Tests.framework */; };
 		EE0674DB165A06658A9FC989 /* Pods_demo3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B858A623C3C4ACE996F6C8E6 /* Pods_demo3.framework */; };
@@ -56,6 +57,7 @@
 		40D532811FAA27830026DB32 /* demo3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demo3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D532851FAA27830026DB32 /* demo3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo3UITests.swift; sourceTree = "<group>"; };
 		40D532871FAA27830026DB32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40F057981FAFC833007EE43B /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftKeychainWrapper.framework; path = "../../../../Library/Developer/Xcode/DerivedData/demo3-beyliajkiytgwqfnebnxeqqzytjp/Build/Products/Debug-iphonesimulator/SwiftKeychainWrapper/SwiftKeychainWrapper.framework"; sourceTree = "<group>"; };
 		5607DF48282E01019A049DF3 /* Pods-demo3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo3.release.xcconfig"; path = "Pods/Target Support Files/Pods-demo3/Pods-demo3.release.xcconfig"; sourceTree = "<group>"; };
 		7BBCFCF0C3BBE7B8EE24D710 /* Pods-demo3UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo3UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo3UITests/Pods-demo3UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8314ACA15E5114EBC79710C7 /* Pods-demo3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo3Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-demo3Tests/Pods-demo3Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F057991FAFC833007EE43B /* SwiftKeychainWrapper.framework in Frameworks */,
 				403D8F771FAD0139002F8FE2 /* Alamofire.framework in Frameworks */,
 				EE0674DB165A06658A9FC989 /* Pods_demo3.framework in Frameworks */,
 			);
@@ -97,6 +100,7 @@
 		0B4B8904A3E79E05B4579262 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40F057981FAFC833007EE43B /* SwiftKeychainWrapper.framework */,
 				403D8F761FAD0139002F8FE2 /* Alamofire.framework */,
 				B858A623C3C4ACE996F6C8E6 /* Pods_demo3.framework */,
 				F7616FE5DC41B8BC9D6C7614 /* Pods_demo3Tests.framework */,
@@ -319,10 +323,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-demo3/Pods-demo3-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

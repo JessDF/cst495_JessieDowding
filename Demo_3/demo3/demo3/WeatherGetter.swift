@@ -8,13 +8,15 @@
 
 import Foundation
 import Alamofire
+import SwiftKeychainWrapper
 
 class WeatherGetter {
     private let openWeatherMapBaseURL = "https://api.openweathermap.org/data/2.5/weather"
-    private let openWeatherMapAPIKey = "1f503f7f44c507605f4904ea08bf0986"
+    let apiKey: Bool = KeychainWrapper.standard.set("1f503f7f44c507605f4904ea08bf0986", forKey: "myapi")
     
     func getWeather(city: String) {
-        let url = "\(openWeatherMapBaseURL)?APPID=\(openWeatherMapAPIKey)&q=\(city)"
+        let retrieveAPI: String? = KeychainWrapper.standard.string(forKey: "myapi")
+        let url = "\(openWeatherMapBaseURL)?APPID=\(retrieveAPI!)&q=\(city)"
         
         Alamofire.request(url)
             .validate()
