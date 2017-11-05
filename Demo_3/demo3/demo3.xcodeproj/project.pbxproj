@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		403D8F751FACFF93002F8FE2 /* WeatherGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403D8F741FACFF93002F8FE2 /* WeatherGetter.swift */; };
 		403D8F771FAD0139002F8FE2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403D8F761FAD0139002F8FE2 /* Alamofire.framework */; };
+		408EE8EF1FAFD855004A5EF5 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EE8EE1FAFD855004A5EF5 /* ToDoItem.swift */; };
+		408EE8F11FAFD92A004A5EF5 /* todoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EE8F01FAFD92A004A5EF5 /* todoViewController.swift */; };
 		40D532661FAA27820026DB32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D532651FAA27820026DB32 /* AppDelegate.swift */; };
 		40D532681FAA27820026DB32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D532671FAA27820026DB32 /* ViewController.swift */; };
 		40D5326B1FAA27820026DB32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D532691FAA27820026DB32 /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 		0A177D8469AE73D83F9C1FA4 /* Pods-demo3UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo3UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-demo3UITests/Pods-demo3UITests.release.xcconfig"; sourceTree = "<group>"; };
 		403D8F741FACFF93002F8FE2 /* WeatherGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherGetter.swift; sourceTree = "<group>"; };
 		403D8F761FAD0139002F8FE2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/demo3-beyliajkiytgwqfnebnxeqqzytjp/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		408EE8EE1FAFD855004A5EF5 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		408EE8F01FAFD92A004A5EF5 /* todoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = todoViewController.swift; sourceTree = "<group>"; };
 		40D532621FAA27820026DB32 /* demo3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D532651FAA27820026DB32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40D532671FAA27820026DB32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,10 +141,12 @@
 				40D532651FAA27820026DB32 /* AppDelegate.swift */,
 				40D532671FAA27820026DB32 /* ViewController.swift */,
 				40D532691FAA27820026DB32 /* Main.storyboard */,
+				408EE8EE1FAFD855004A5EF5 /* ToDoItem.swift */,
 				40D5326C1FAA27820026DB32 /* Assets.xcassets */,
 				40D5326E1FAA27820026DB32 /* LaunchScreen.storyboard */,
 				40D532711FAA27820026DB32 /* Info.plist */,
 				403D8F741FACFF93002F8FE2 /* WeatherGetter.swift */,
+				408EE8F01FAFD92A004A5EF5 /* todoViewController.swift */,
 			);
 			path = demo3;
 			sourceTree = "<group>";
@@ -474,6 +480,8 @@
 				40D532681FAA27820026DB32 /* ViewController.swift in Sources */,
 				403D8F751FACFF93002F8FE2 /* WeatherGetter.swift in Sources */,
 				40D532661FAA27820026DB32 /* AppDelegate.swift in Sources */,
+				408EE8F11FAFD92A004A5EF5 /* todoViewController.swift in Sources */,
+				408EE8EF1FAFD855004A5EF5 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
