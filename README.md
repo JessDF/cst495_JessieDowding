@@ -24,6 +24,7 @@ CST 495 iOS 10 and Swift 3
 * GitHub for CocoaPod: https;//github.com/JessDF/JDOWDINGCOCOA
 * Project: WorldTrotter_Demo
 * Has it's own branch
+* Repository: https://github.com/JessDF/cst495_JessieDowding/tree/master/Demo_1
 
 ##### Demo 2 - Information
 * Repository: https://github.com/JessDF/cst495_JessieDowding/tree/master/Demo_2
@@ -33,6 +34,10 @@ CST 495 iOS 10 and Swift 3
 * Repository: https://github.com/JessDF/cst495_JessieDowding/tree/master/Demo_3
 * Sources: See Readme w/in Demo_3 folder
 * Included in folder are two other projects that were used to learn about <br> Grand Central Dispatch and running items in the background.
+
+##### Demo 4 - Information
+* Repository: 
+* Sources: See Readme w/in Demo_4 folder
 
 To Do: <br>
 https://www.raywenderlich.com/166125/instruments-tutorial-swift-getting-started
