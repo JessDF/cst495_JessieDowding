@@ -61,8 +61,8 @@ class ViewController: UITableViewController {
                     weather.getWeather(city: title){
                         self.city = title + " - " + weather.temp
                         print("city: " + self.city)
+                        self.addNewToDoItem(title: self.city)
                     }
-                    self.addNewToDoItem(title: self.city)
                 }
         }))
         
