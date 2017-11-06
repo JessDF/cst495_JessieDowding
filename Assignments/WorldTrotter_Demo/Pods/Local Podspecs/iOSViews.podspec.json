@@ -1,0 +1,23 @@
+{
+  "name": "iOSViews",
+  "version": "0.1.0",
+  "summary": "Boilerplate UIViews for kickstarting iOS apps.",
+  "description": "Boilerplate UIViews for kickstarting iOS apps. Install library into project, to save time writing generic page.",
+  "homepage": "https://github.com/JessDF/cocoaPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "JessDF": "jdowding@csumb.edu"
+  },
+  "source": {
+    "git": "https://github.com/JessDF/cocoaPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iOSViews/Classes/**/*",
+  "frameworks": "UIKit"
+}
