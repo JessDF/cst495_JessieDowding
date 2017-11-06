@@ -33,3 +33,17 @@ CST 495 iOS 10 and Swift 3
 ##### Chapter 6 - Programmatic Views (See WorldTrotter)
 * Create View Programmatically
 * Programmatic Constraints and Controls
+
+##### raywenderlich.com - Background Modes Tutorial: Getting Started
+* NOTE: Also have files in Demo_3 folder
+* Learn how to use the background modes for ios
+* Ex. Playing music in the background, when surfing the internet
+* Starter Project - The Backgrounder
+* https://www.raywenderlich.com/143128/background-modes-tutorial-getting-started
+
+##### raywenderlich.com - Grand Central Dispatch Tutorial for Swift 3
+* NOTE: Also have files in Demo_3 folder
+* Learn how to use Grand Central Dispatch (GCD).
+* GCD is a low-level API for managing concurrent operations. 
+* Starter Project - GooglyPuff
+* https://www.raywenderlich.com/148513/grand-central-dispatch-tutorial-swift-3-part-1
