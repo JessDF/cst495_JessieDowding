@@ -29,7 +29,7 @@ class WeatherGetter {
     }
     
     var temp: String {
-        return _temp ?? "0 °C"
+        return _temp ?? "0 °F"
     }
     
     var location: String {

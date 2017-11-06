@@ -40,10 +40,7 @@ class ToDoItem: NSObject, NSCoding {
 extension ToDoItem {
     public class func getMockData() -> [ToDoItem] {
         return [
-            ToDoItem(title: "Milk"),
-            ToDoItem(title: "Chocolate"),
-            ToDoItem(title: "Light bulb"),
-            ToDoItem(title: "Dog food")
+            ToDoItem(title: "Sample - 0°F")
         ]
     }
 }

@@ -17,7 +17,7 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.title = "To-Do"
+        self.title =  "Weather Searches"
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(ViewController.didTapAddItemButton(_:)))
         
@@ -45,7 +45,7 @@ class ViewController: UITableViewController {
             {
                 let alert = UIAlertController(
                     title: "Error",
-                    message: "Could not load the to-do items!",
+                    message: "Could not load weather!",
                     preferredStyle: .alert)
                 
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -80,8 +80,8 @@ class ViewController: UITableViewController {
     {
         // Create an alert
         let alert = UIAlertController(
-            title: "New to-do item",
-            message: "Insert the title of the new to-do item:",
+            title: "New City",
+            message: "Insert new City for a weather",
             preferredStyle: .alert)
         
         // Add a text field to the alert for the new item's title
@@ -96,7 +96,12 @@ class ViewController: UITableViewController {
                 // Get the title the user inserted, but only if it is not an empty string
                 if let title = alert.textFields?[0].text, title.characters.count > 0
                 {
-                    self.addNewToDoItem(title: title)
+                    let weather = WeatherGetter()
+                    var newTitle = title
+                    weather.getWeather(city: title){
+                        newTitle = newTitle + " - " + weather.temp
+                    }
+                    self.addNewToDoItem(title: newTitle)
                 }
         }))
         
