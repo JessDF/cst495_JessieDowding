@@ -36,7 +36,7 @@ class ViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    var city = ""
     func didTapAddItemButton(_ sender: UIBarButtonItem)
     {
         // Create an alert
@@ -58,11 +58,11 @@ class ViewController: UITableViewController {
                 if let title = alert.textFields?[0].text, title.characters.count > 0
                 {
                     let weather = WeatherGetter()
-                    var newTitle = title
                     weather.getWeather(city: title){
-                        newTitle = newTitle + " - " + weather.temp
+                        self.city = title + " - " + weather.temp
+                        print("city: " + self.city)
                     }
-                    self.addNewToDoItem(title: newTitle)
+                    self.addNewToDoItem(title: self.city)
                 }
         }))
         
