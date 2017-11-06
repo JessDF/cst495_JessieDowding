@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     
-    private var todoItems = [ToDoItem]()
+    private var todoItems = ToDoItem.getMockData()
     
     override func viewDidLoad()
     {
@@ -29,46 +29,7 @@ class ViewController: UITableViewController {
             selector: #selector(UIApplicationDelegate.applicationDidEnterBackground(_:)),
             name: NSNotification.Name.UIApplicationDidEnterBackground,
             object: nil)
-        
-        do
-        {
-            // Try to load from persistence
-            self.todoItems = try [ToDoItem].readFromPersistence()
         }
-        catch let error as NSError
-        {
-            if error.domain == NSCocoaErrorDomain && error.code == NSFileReadNoSuchFileError
-            {
-                NSLog("No persistence file found, not necesserially an error...")
-            }
-            else
-            {
-                let alert = UIAlertController(
-                    title: "Error",
-                    message: "Could not load weather!",
-                    preferredStyle: .alert)
-                
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                
-                self.present(alert, animated: true, completion: nil)
-                
-                NSLog("Error loading from persistence: \(error)")
-            }
-        }
-    }
-    
-    @objc
-    public func applicationDidEnterBackground(_ notification: NSNotification)
-    {
-        do
-        {
-            try todoItems.writeToPersistence()
-        }
-        catch let error
-        {
-            NSLog("Error writing to persistence: \(error)")
-        }
-    }
     
     override func didReceiveMemoryWarning()
     {
