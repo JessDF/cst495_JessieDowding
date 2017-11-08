@@ -18,6 +18,7 @@ CST 495 iOS 10 and Swift 3
 * Challenge 2 - Delgation and Notification Challenge
 * Challenge 3 - UIScrollView, UICollectionView Challenge Page
 * Challenge 4 - Web Service and GCD Challenge Page
+* Challenge 5 - Settings
 
 #### Demos
 
