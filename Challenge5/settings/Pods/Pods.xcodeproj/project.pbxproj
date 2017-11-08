@@ -7,23 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CFA6167DB1353A556C44B56587AD00E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		2D420BA64FA8618255645E12827A9F7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3170125FB30D79BE0B464757E823BCAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		56C0EC0DD9FE03289FBBE4C3033079B5 /* Pods-settings-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 896AF4A401B381FB018F87AE99BA021D /* Pods-settings-dummy.m */; };
+		1328B4572878DD6345843C08C5ED0188 /* Pods-settings-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 896AF4A401B381FB018F87AE99BA021D /* Pods-settings-dummy.m */; };
+		21ACB2B2B8A2DB5B654852CF770F145C /* Pods-settings-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 584930BB40D2D82326DCF6B6D2A3E461 /* Pods-settings-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D420BA64FA8618255645E12827A9F7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB834EF7FA521D5AD69D9844D26B571 /* Foundation.framework */; };
+		3170125FB30D79BE0B464757E823BCAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB834EF7FA521D5AD69D9844D26B571 /* Foundation.framework */; };
+		411296BE807A2972A3FDFF5D3A9BA351 /* JPSVolumeButtonHandler-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 958B8A0CC9BB37063EAFFEA28CEBFB8C /* JPSVolumeButtonHandler-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58227225B226DCB2CBBB1EA64DBF0D1C /* Pods-settingsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7599E36735A2ED808F37DC14C93EE889 /* Pods-settingsTests-dummy.m */; };
-		6529AE399AF09151735AACEB3D336980 /* Pods-settings-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 584930BB40D2D82326DCF6B6D2A3E461 /* Pods-settings-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66D2D0BAD7D7C5574E894DED6521825A /* JPSVolumeButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 946DE275FD074CB70331F17708666C71 /* JPSVolumeButtonHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BE91DDECCD7415E19090617DEFD0B0A /* JPSVolumeButtonHandler-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E101B5D3955EF6AAC076B075705EBF /* JPSVolumeButtonHandler-dummy.m */; };
+		70704D6475E65902C472B5EBBFAAC2B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB834EF7FA521D5AD69D9844D26B571 /* Foundation.framework */; };
+		78272313FDCC5664566C7A8C1ADAE5B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D206D9E4CCE4137549C52488F2DA3226 /* QuartzCore.framework */; };
+		791BF12D91149998CA4B2F9F02FE0F3C /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18573194B4B0D1472416E9A1FC0212B /* Toast.swift */; };
 		81F3D86CFCF65836500BA22592087E4C /* Pods-settingsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 649403977AAA0A1F37B219E82FF60317 /* Pods-settingsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		836425F32599395E48C31A73450CC1DE /* Pods-settingsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D2E9E5B37DA922C300B6D2F13DD6CA /* Pods-settingsUITests-dummy.m */; };
 		8C53D2DA3F607B90A521A1F3EFD4E43A /* Pods-settingsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96659E75D13542F9EF72B379FA69A0AA /* Pods-settingsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A967960EE4C1C1AF8A3FC3555BABDC58 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45FDC0D6DC265F0A753008ABAAB304D /* Keychain.swift */; };
-		BDA750A5542A5D826A35B1BE6A69574A /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C0FBF620376E73922C9CBB598A1376A /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C456AEBA7FACA838B8EF6CE4F7029C3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D823270043210DD356225D7700FAF3E4 /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E420B538DBE70FFE8A34791A27F7EFA /* KeychainAccess-dummy.m */; };
+		8F969B630F62AFFFCAA1FB1FF77730CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB834EF7FA521D5AD69D9844D26B571 /* Foundation.framework */; };
+		A1ED815547D8FFA3C2A716A50A604CAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B30D0C50C1B023D3B2627CE5050B9 /* AVFoundation.framework */; };
+		A967960EE4C1C1AF8A3FC3555BABDC58 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29391D1F1DA66405A49BA1710623A8E /* Keychain.swift */; };
+		AE0D108936772D2424A68AC86B44DA3F /* JPSVolumeButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C85C52CC615DB2A391BB6E5BAD01C31C /* JPSVolumeButtonHandler.m */; };
+		BDA750A5542A5D826A35B1BE6A69574A /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11347182DA21A6210FD1B5DFD14C5F65 /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C456AEBA7FACA838B8EF6CE4F7029C3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB834EF7FA521D5AD69D9844D26B571 /* Foundation.framework */; };
+		D823270043210DD356225D7700FAF3E4 /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80ADFB372C747E143549B4B038D091E2 /* KeychainAccess-dummy.m */; };
+		E34B6FBA8A8E595B777ABEDA00BA014B /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A2CF050FED89C71159A5667186B7A0 /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4C13C09947EBF1C3DA8544D0C0705E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E680231B65A3987F7BB80983E2AB6F49 /* MediaPlayer.framework */; };
+		EF5D175A300CB14C450D2AFF26924736 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB834EF7FA521D5AD69D9844D26B571 /* Foundation.framework */; };
+		F6814D44958E348014B4838E8381DE89 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C1FF4D31C049DE59DD656805B2DB85 /* Toast-Swift-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7D5835844B3B22086FDC9489D020F717 /* PBXContainerItemProxy */ = {
+		3FBB825B5277E3FBAE1FB6183FB4F882 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49442B834B6726B7A1387CC4B226F143;
+			remoteInfo = JPSVolumeButtonHandler;
+		};
+		C1E3BA138E86781FC567C0D270C01CA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBDF04E61F8979A1334E72E393045CF5;
+			remoteInfo = "Toast-Swift";
+		};
+		E2612E52CA6AAC4945E1D26F02D43B77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -34,47 +60,67 @@
 
 /* Begin PBXFileReference section */
 		071C5DD3B2BE3AEE69CDEEABF9986F24 /* Pods-settings-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-settings-acknowledgements.plist"; sourceTree = "<group>"; };
+		11347182DA21A6210FD1B5DFD14C5F65 /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
 		13661E5E20596ECB41C57E27EFA92131 /* Pods-settingsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-settingsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		13769629B37033BC4733374A06AF6A66 /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
+		16218767B57C80B01CDD1A111539FA49 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A570FDE8FEB997B1ED5D17C1852F89D /* Pods-settings-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-settings-acknowledgements.markdown"; sourceTree = "<group>"; };
 		21A16EC26382416728A559F3885E5C77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25E8AE41F9DAE57CD5EA4942499CBB3E /* Pods-settingsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-settingsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2704E4A970D356E9547EF3F125AEABF8 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
+		2EB834EF7FA521D5AD69D9844D26B571 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		34B5C021BBCB7C2B878D45E315F4142A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		350256EEFBBD9DB0305920DEEBCF0644 /* Pods-settingsUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-settingsUITests-resources.sh"; sourceTree = "<group>"; };
+		37E101B5D3955EF6AAC076B075705EBF /* JPSVolumeButtonHandler-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JPSVolumeButtonHandler-dummy.m"; sourceTree = "<group>"; };
 		410387A9BA414C4147A4FE68191C2F5A /* Pods-settingsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-settingsTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B0B30D0C50C1B023D3B2627CE5050B9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		4B2B06D1F1511E088F3F48A77EC4D825 /* Pods-settingsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-settingsTests-resources.sh"; sourceTree = "<group>"; };
-		4C0FBF620376E73922C9CBB598A1376A /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
+		50ACD6F8A76E8B76BE5312A15C67247F /* Pods_settings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_settings.framework; path = "Pods-settings.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51C1FF4D31C049DE59DD656805B2DB85 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
+		560FDA98DDEB926B63460787CA7AB06F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56B33203BD50AFFA97C4C5803B8006CF /* Pods-settings.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-settings.modulemap"; sourceTree = "<group>"; };
+		570592C2E1F0C45E4A0C0726D3749D02 /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
 		584930BB40D2D82326DCF6B6D2A3E461 /* Pods-settings-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-settings-umbrella.h"; sourceTree = "<group>"; };
 		5FA3AC5B156EEA9733E9A91252EF019D /* Pods-settingsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-settingsTests-frameworks.sh"; sourceTree = "<group>"; };
 		5FF4CCD932476478B32D07B51B31B1F7 /* Pods-settings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-settings.release.xcconfig"; sourceTree = "<group>"; };
-		628FBFFDBB12BE39FFE4643FAF71461A /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
 		649403977AAA0A1F37B219E82FF60317 /* Pods-settingsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-settingsTests-umbrella.h"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6ED528FBA07C31AA55C679BAB12DEC58 /* Pods_settings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_settings.framework; path = "Pods-settings.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		706B2E142C9B7A7DA1C0DBFB47AC2987 /* Pods-settingsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-settingsUITests.modulemap"; sourceTree = "<group>"; };
 		7599E36735A2ED808F37DC14C93EE889 /* Pods-settingsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-settingsTests-dummy.m"; sourceTree = "<group>"; };
 		77D2E9E5B37DA922C300B6D2F13DD6CA /* Pods-settingsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-settingsUITests-dummy.m"; sourceTree = "<group>"; };
-		7BD3E63402ADB4C7E6632A5BF5C571B1 /* Pods_settingsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_settingsTests.framework; path = "Pods-settingsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80ADFB372C747E143549B4B038D091E2 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
+		8143624E732C5DBB6C347C25AAF40E34 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		896AF4A401B381FB018F87AE99BA021D /* Pods-settings-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-settings-dummy.m"; sourceTree = "<group>"; };
-		8ED1A591B408F90908599E86A40089F0 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KeychainAccess.framework; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		91EA7CC4441B476E2BC87D79E22462A0 /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
+		8A1C9D4932976DCB6BBD8D8A34BF61E7 /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		946DE275FD074CB70331F17708666C71 /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JPSVolumeButtonHandler.h; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
 		9520D6675D0178242AD5C740F3C758D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		958B8A0CC9BB37063EAFFEA28CEBFB8C /* JPSVolumeButtonHandler-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-umbrella.h"; sourceTree = "<group>"; };
 		96659E75D13542F9EF72B379FA69A0AA /* Pods-settingsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-settingsUITests-umbrella.h"; sourceTree = "<group>"; };
 		969A7305B7114C4EF8CFB27631FAC634 /* Pods-settingsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-settingsUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D3AC6E9954DBDBCD2E3E793834132DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E420B538DBE70FFE8A34791A27F7EFA /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
-		9E470B8C406366668115BE163F518325 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
+		9A1E973A91298AF24DDADE287A04695B /* JPSVolumeButtonHandler-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JPSVolumeButtonHandler-prefix.pch"; sourceTree = "<group>"; };
+		A18573194B4B0D1472416E9A1FC0212B /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
 		A423BDB820EE9E255F844F902462D73B /* Pods-settingsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-settingsTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A7245E5891CBFCB94AF3A5783550CED7 /* Pods-settingsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-settingsUITests-frameworks.sh"; sourceTree = "<group>"; };
 		AE08BB777560CBAB78E690428B38BDAA /* Pods-settingsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-settingsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B9F6D82EE22D725B070F1EE2740FDE6D /* Pods_settingsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_settingsUITests.framework; path = "Pods-settingsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06F340011A7D3014AC515790F00393C /* Pods_settingsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_settingsTests.framework; path = "Pods-settingsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EBA27F4A6293A944B2E1B14AD8B943 /* Pods_settingsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_settingsUITests.framework; path = "Pods-settingsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97AA03610537618296C3A24E1DBB1BC /* JPSVolumeButtonHandler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JPSVolumeButtonHandler.xcconfig; sourceTree = "<group>"; };
+		C83795FDD3065FBC7FF9CB3BCC3D6175 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
+		C85C52CC615DB2A391BB6E5BAD01C31C /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JPSVolumeButtonHandler.m; path = JPSVolumeButtonHandler/JPSVolumeButtonHandler.m; sourceTree = "<group>"; };
+		C8A2CF050FED89C71159A5667186B7A0 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
+		C96885608BB08820DD94D7C840FA7A51 /* JPSVolumeButtonHandler.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JPSVolumeButtonHandler.modulemap; sourceTree = "<group>"; };
 		C9F7F8D28557432C430C965B3A96B0D8 /* Pods-settingsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-settingsTests.modulemap"; sourceTree = "<group>"; };
 		CE45977D9727FBC33984A5D89CF6595F /* Pods-settings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-settings.debug.xcconfig"; sourceTree = "<group>"; };
+		D206D9E4CCE4137549C52488F2DA3226 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D42E6B1F06502E99C84B692B93F8F6CA /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F8A4548CBCDE8A22B4C449D914F7F6 /* Pods-settings-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-settings-resources.sh"; sourceTree = "<group>"; };
 		DBA62E2A2865BE0A2EE46ADD3D1D2D20 /* Pods-settings-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-settings-frameworks.sh"; sourceTree = "<group>"; };
 		DCDAFEAE2ED13AFF4ED8E79AFADCB675 /* Pods-settingsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-settingsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E45FDC0D6DC265F0A753008ABAAB304D /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
+		DDF62539518ADFA8C40C5402166FCD6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE6355A22E3359C98A702022B56A47A0 /* JPSVolumeButtonHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JPSVolumeButtonHandler.framework; path = JPSVolumeButtonHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E361E256DE12F57E861EFFCA11A69546 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		E680231B65A3987F7BB80983E2AB6F49 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		F29391D1F1DA66405A49BA1710623A8E /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
 		FA01970F4776CA5F2D6DFEE45B49DBF3 /* Pods-settingsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-settingsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +133,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E009CDC0435C90150F3422345907A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1ED815547D8FFA3C2A716A50A604CAA /* AVFoundation.framework in Frameworks */,
+				8F969B630F62AFFFCAA1FB1FF77730CD /* Foundation.framework in Frameworks */,
+				EC4C13C09947EBF1C3DA8544D0C0705E /* MediaPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E8BA16EAE9B0C0B41FB6E6288BBA3A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,11 +151,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F8A75E333A43F9743F6CA744F4CEF7F /* Frameworks */ = {
+		4E79951A7F895754B37A72B151BA1212 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CFA6167DB1353A556C44B56587AD00E /* Foundation.framework in Frameworks */,
+				70704D6475E65902C472B5EBBFAAC2B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF9868B319A326DDB918C3B3E110C42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5D175A300CB14C450D2AFF26924736 /* Foundation.framework in Frameworks */,
+				78272313FDCC5664566C7A8C1ADAE5B4 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +179,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024250BFEE93EE03EA825509942137F5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDF62539518ADFA8C40C5402166FCD6C /* Info.plist */,
+				C83795FDD3065FBC7FF9CB3BCC3D6175 /* KeychainAccess.modulemap */,
+				13769629B37033BC4733374A06AF6A66 /* KeychainAccess.xcconfig */,
+				80ADFB372C747E143549B4B038D091E2 /* KeychainAccess-dummy.m */,
+				570592C2E1F0C45E4A0C0726D3749D02 /* KeychainAccess-prefix.pch */,
+				11347182DA21A6210FD1B5DFD14C5F65 /* KeychainAccess-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainAccess";
+			sourceTree = "<group>";
+		};
 		0CE270E78E361120701521E83D7510E4 /* Pods-settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,66 +211,81 @@
 			path = "Target Support Files/Pods-settings";
 			sourceTree = "<group>";
 		};
-		2AB1A47AA2CBC2031F01A4135312B7D7 /* Pods */ = {
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9CE82D5F87403F7C6C58580E58F91C25 /* KeychainAccess */,
+				CFECF0548017757271563A1B9F3ACDD6 /* iOS */,
 			);
-			name = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14C9CFCBEFAE09914C34B0C63BB11CE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE6355A22E3359C98A702022B56A47A0 /* JPSVolumeButtonHandler.framework */,
+				16218767B57C80B01CDD1A111539FA49 /* KeychainAccess.framework */,
+				50ACD6F8A76E8B76BE5312A15C67247F /* Pods_settings.framework */,
+				B06F340011A7D3014AC515790F00393C /* Pods_settingsTests.framework */,
+				B7EBA27F4A6293A944B2E1B14AD8B943 /* Pods_settingsUITests.framework */,
+				D42E6B1F06502E99C84B692B93F8F6CA /* Toast_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		572B46C7A27AEAF5A1F55E9E0B6EFBA3 /* Toast-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A18573194B4B0D1472416E9A1FC0212B /* Toast.swift */,
+				C425D2E7038591D9ABD1BA2337CFB7D0 /* Support Files */,
+			);
+			name = "Toast-Swift";
+			path = "Toast-Swift";
+			sourceTree = "<group>";
+		};
+		58DAE3EC71492D31ED11F45D2F100786 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8143624E732C5DBB6C347C25AAF40E34 /* Info.plist */,
+				C96885608BB08820DD94D7C840FA7A51 /* JPSVolumeButtonHandler.modulemap */,
+				B97AA03610537618296C3A24E1DBB1BC /* JPSVolumeButtonHandler.xcconfig */,
+				37E101B5D3955EF6AAC076B075705EBF /* JPSVolumeButtonHandler-dummy.m */,
+				9A1E973A91298AF24DDADE287A04695B /* JPSVolumeButtonHandler-prefix.pch */,
+				958B8A0CC9BB37063EAFFEA28CEBFB8C /* JPSVolumeButtonHandler-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JPSVolumeButtonHandler";
+			sourceTree = "<group>";
+		};
+		5F2A8DB5CC231F40288BF0A4A65606A3 /* JPSVolumeButtonHandler */ = {
+			isa = PBXGroup;
+			children = (
+				946DE275FD074CB70331F17708666C71 /* JPSVolumeButtonHandler.h */,
+				C85C52CC615DB2A391BB6E5BAD01C31C /* JPSVolumeButtonHandler.m */,
+				58DAE3EC71492D31ED11F45D2F100786 /* Support Files */,
+			);
+			name = JPSVolumeButtonHandler;
+			path = JPSVolumeButtonHandler;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				2AB1A47AA2CBC2031F01A4135312B7D7 /* Pods */,
-				A133ADA08D5BF461F0DAA6AC15E0E086 /* Products */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				83B4562148C4A716AAB3ACAC5C3D8EBF /* Pods */,
+				14C9CFCBEFAE09914C34B0C63BB11CE1 /* Products */,
 				C3D265E328BC1E86D5EF624E0B3459EA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		85C514AE7EE6501083B3C510EED5AEEE /* Support Files */ = {
+		83B4562148C4A716AAB3ACAC5C3D8EBF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9D3AC6E9954DBDBCD2E3E793834132DD /* Info.plist */,
-				9E470B8C406366668115BE163F518325 /* KeychainAccess.modulemap */,
-				628FBFFDBB12BE39FFE4643FAF71461A /* KeychainAccess.xcconfig */,
-				9E420B538DBE70FFE8A34791A27F7EFA /* KeychainAccess-dummy.m */,
-				91EA7CC4441B476E2BC87D79E22462A0 /* KeychainAccess-prefix.pch */,
-				4C0FBF620376E73922C9CBB598A1376A /* KeychainAccess-umbrella.h */,
+				5F2A8DB5CC231F40288BF0A4A65606A3 /* JPSVolumeButtonHandler */,
+				CA86762BCB0A10027D3B6DA09E936EB0 /* KeychainAccess */,
+				572B46C7A27AEAF5A1F55E9E0B6EFBA3 /* Toast-Swift */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/KeychainAccess";
-			sourceTree = "<group>";
-		};
-		9CE82D5F87403F7C6C58580E58F91C25 /* KeychainAccess */ = {
-			isa = PBXGroup;
-			children = (
-				E45FDC0D6DC265F0A753008ABAAB304D /* Keychain.swift */,
-				85C514AE7EE6501083B3C510EED5AEEE /* Support Files */,
-			);
-			name = KeychainAccess;
-			path = KeychainAccess;
-			sourceTree = "<group>";
-		};
-		A133ADA08D5BF461F0DAA6AC15E0E086 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8ED1A591B408F90908599E86A40089F0 /* KeychainAccess.framework */,
-				6ED528FBA07C31AA55C679BAB12DEC58 /* Pods_settings.framework */,
-				7BD3E63402ADB4C7E6632A5BF5C571B1 /* Pods_settingsTests.framework */,
-				B9F6D82EE22D725B070F1EE2740FDE6D /* Pods_settingsUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C3D265E328BC1E86D5EF624E0B3459EA /* Targets Support Files */ = {
@@ -204,10 +298,37 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		C425D2E7038591D9ABD1BA2337CFB7D0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				560FDA98DDEB926B63460787CA7AB06F /* Info.plist */,
+				E361E256DE12F57E861EFFCA11A69546 /* Toast-Swift.modulemap */,
+				8A1C9D4932976DCB6BBD8D8A34BF61E7 /* Toast-Swift.xcconfig */,
+				51C1FF4D31C049DE59DD656805B2DB85 /* Toast-Swift-dummy.m */,
+				2704E4A970D356E9547EF3F125AEABF8 /* Toast-Swift-prefix.pch */,
+				C8A2CF050FED89C71159A5667186B7A0 /* Toast-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Toast-Swift";
+			sourceTree = "<group>";
+		};
+		CA86762BCB0A10027D3B6DA09E936EB0 /* KeychainAccess */ = {
+			isa = PBXGroup;
+			children = (
+				F29391D1F1DA66405A49BA1710623A8E /* Keychain.swift */,
+				024250BFEE93EE03EA825509942137F5 /* Support Files */,
+			);
+			name = KeychainAccess;
+			path = KeychainAccess;
+			sourceTree = "<group>";
+		};
+		CFECF0548017757271563A1B9F3ACDD6 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B0B30D0C50C1B023D3B2627CE5050B9 /* AVFoundation.framework */,
+				2EB834EF7FA521D5AD69D9844D26B571 /* Foundation.framework */,
+				E680231B65A3987F7BB80983E2AB6F49 /* MediaPlayer.framework */,
+				D206D9E4CCE4137549C52488F2DA3226 /* QuartzCore.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -251,6 +372,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		439DB56B312DDF3B05E12B58B24669E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21ACB2B2B8A2DB5B654852CF770F145C /* Pods-settings-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4A87AAEB91BD3E54AE3B69D08A1008AD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,11 +396,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D774C49AB5B731BF55C4BCC4A8218EAD /* Headers */ = {
+		C014AB2E8A33EA9FB8322FC4C79F43E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6529AE399AF09151735AACEB3D336980 /* Pods-settings-umbrella.h in Headers */,
+				411296BE807A2972A3FDFF5D3A9BA351 /* JPSVolumeButtonHandler-umbrella.h in Headers */,
+				66D2D0BAD7D7C5574E894DED6521825A /* JPSVolumeButtonHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2739A827970EE47E315CDCB74180C87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34B6FBA8A8E595B777ABEDA00BA014B /* Toast-Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +424,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		49442B834B6726B7A1387CC4B226F143 /* JPSVolumeButtonHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDD3C061049B7E782E960FE19C3DF454 /* Build configuration list for PBXNativeTarget "JPSVolumeButtonHandler" */;
+			buildPhases = (
+				F41945D9C47255B774FCF0FD1D5867B3 /* Sources */,
+				3E009CDC0435C90150F3422345907A02 /* Frameworks */,
+				C014AB2E8A33EA9FB8322FC4C79F43E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JPSVolumeButtonHandler;
+			productName = JPSVolumeButtonHandler;
+			productReference = DE6355A22E3359C98A702022B56A47A0 /* JPSVolumeButtonHandler.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		86006C155BFCFFA247FA69A65A3C5357 /* Pods-settingsUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC92741DC7010D9DA2D8D6792A623006 /* Build configuration list for PBXNativeTarget "Pods-settingsUITests" */;
@@ -300,7 +455,7 @@
 			);
 			name = "Pods-settingsUITests";
 			productName = "Pods-settingsUITests";
-			productReference = B9F6D82EE22D725B070F1EE2740FDE6D /* Pods_settingsUITests.framework */;
+			productReference = B7EBA27F4A6293A944B2E1B14AD8B943 /* Pods_settingsUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */ = {
@@ -317,7 +472,7 @@
 			);
 			name = KeychainAccess;
 			productName = KeychainAccess;
-			productReference = 8ED1A591B408F90908599E86A40089F0 /* KeychainAccess.framework */;
+			productReference = 16218767B57C80B01CDD1A111539FA49 /* KeychainAccess.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CCD0FDEAB73FE2F4C4140ABBE7BA2416 /* Pods-settingsTests */ = {
@@ -334,25 +489,44 @@
 			);
 			name = "Pods-settingsTests";
 			productName = "Pods-settingsTests";
-			productReference = 7BD3E63402ADB4C7E6632A5BF5C571B1 /* Pods_settingsTests.framework */;
+			productReference = B06F340011A7D3014AC515790F00393C /* Pods_settingsTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F2DF8DD69D1F620BE70FCB0DCD5180E8 /* Pods-settings */ = {
+		D7AAFBE25A07A12D0E9C450AD1D1D4FD /* Pods-settings */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2222D148CD64EEE2C18432CC7EE3F0E /* Build configuration list for PBXNativeTarget "Pods-settings" */;
+			buildConfigurationList = C179193127630FC4A0913EA2598FBE87 /* Build configuration list for PBXNativeTarget "Pods-settings" */;
 			buildPhases = (
-				5D0FAE97ADA363558BEAF116FA603456 /* Sources */,
-				3F8A75E333A43F9743F6CA744F4CEF7F /* Frameworks */,
-				D774C49AB5B731BF55C4BCC4A8218EAD /* Headers */,
+				7FCE9156783836FE8C496839F1A8333F /* Sources */,
+				4E79951A7F895754B37A72B151BA1212 /* Frameworks */,
+				439DB56B312DDF3B05E12B58B24669E0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D5C430FD059CA7D7509CA22836718A99 /* PBXTargetDependency */,
+				98AF19022DBE97531875B038E34D68EA /* PBXTargetDependency */,
+				87387503D646258B4FFBAFD3BB20615F /* PBXTargetDependency */,
+				CA5D572453BC8919A345D5F06695D77D /* PBXTargetDependency */,
 			);
 			name = "Pods-settings";
 			productName = "Pods-settings";
-			productReference = 6ED528FBA07C31AA55C679BAB12DEC58 /* Pods_settings.framework */;
+			productReference = 50ACD6F8A76E8B76BE5312A15C67247F /* Pods_settings.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DBDF04E61F8979A1334E72E393045CF5 /* Toast-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E0020566F9744D4E5040B3593A72A2A /* Build configuration list for PBXNativeTarget "Toast-Swift" */;
+			buildPhases = (
+				8A3EDEF73757571D3F264D326F44F94D /* Sources */,
+				AFF9868B319A326DDB918C3B3E110C42 /* Frameworks */,
+				C2739A827970EE47E315CDCB74180C87 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Toast-Swift";
+			productName = "Toast-Swift";
+			productReference = D42E6B1F06502E99C84B692B93F8F6CA /* Toast_Swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -372,14 +546,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A133ADA08D5BF461F0DAA6AC15E0E086 /* Products */;
+			productRefGroup = 14C9CFCBEFAE09914C34B0C63BB11CE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				49442B834B6726B7A1387CC4B226F143 /* JPSVolumeButtonHandler */,
 				8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */,
-				F2DF8DD69D1F620BE70FCB0DCD5180E8 /* Pods-settings */,
+				D7AAFBE25A07A12D0E9C450AD1D1D4FD /* Pods-settings */,
 				CCD0FDEAB73FE2F4C4140ABBE7BA2416 /* Pods-settingsTests */,
 				86006C155BFCFFA247FA69A65A3C5357 /* Pods-settingsUITests */,
+				DBDF04E61F8979A1334E72E393045CF5 /* Toast-Swift */,
 			);
 		};
 /* End PBXProject section */
@@ -393,19 +569,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D0FAE97ADA363558BEAF116FA603456 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				56C0EC0DD9FE03289FBBE4C3033079B5 /* Pods-settings-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6706CBDE2AA076E79AC4CCA6AC650CFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				836425F32599395E48C31A73450CC1DE /* Pods-settingsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FCE9156783836FE8C496839F1A8333F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1328B4572878DD6345843C08C5ED0188 /* Pods-settings-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A3EDEF73757571D3F264D326F44F94D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6814D44958E348014B4838E8381DE89 /* Toast-Swift-dummy.m in Sources */,
+				791BF12D91149998CA4B2F9F02FE0F3C /* Toast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,19 +603,108 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F41945D9C47255B774FCF0FD1D5867B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BE91DDECCD7415E19090617DEFD0B0A /* JPSVolumeButtonHandler-dummy.m in Sources */,
+				AE0D108936772D2424A68AC86B44DA3F /* JPSVolumeButtonHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D5C430FD059CA7D7509CA22836718A99 /* PBXTargetDependency */ = {
+		87387503D646258B4FFBAFD3BB20615F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KeychainAccess;
 			target = 8905DB6521F8FDC34752B69DEE3FDEB7 /* KeychainAccess */;
-			targetProxy = 7D5835844B3B22086FDC9489D020F717 /* PBXContainerItemProxy */;
+			targetProxy = E2612E52CA6AAC4945E1D26F02D43B77 /* PBXContainerItemProxy */;
+		};
+		98AF19022DBE97531875B038E34D68EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JPSVolumeButtonHandler;
+			target = 49442B834B6726B7A1387CC4B226F143 /* JPSVolumeButtonHandler */;
+			targetProxy = 3FBB825B5277E3FBAE1FB6183FB4F882 /* PBXContainerItemProxy */;
+		};
+		CA5D572453BC8919A345D5F06695D77D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Toast-Swift";
+			target = DBDF04E61F8979A1334E72E393045CF5 /* Toast-Swift */;
+			targetProxy = C1E3BA138E86781FC567C0D270C01CA2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3BE59F0C78EB9706934B59BEF1573650 /* Debug */ = {
+		12E642D1C7B6117943FDB21D4D016E97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97AA03610537618296C3A24E1DBB1BC /* JPSVolumeButtonHandler.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JPSVolumeButtonHandler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		156005F526D1505E525E75FE265908E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97AA03610537618296C3A24E1DBB1BC /* JPSVolumeButtonHandler.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JPSVolumeButtonHandler/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JPSVolumeButtonHandler/JPSVolumeButtonHandler.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JPSVolumeButtonHandler;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AAB47219A1062403283E7C75AE6DA85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE45977D9727FBC33984A5D89CF6595F /* Pods-settings.debug.xcconfig */;
 			buildSettings = {
@@ -587,7 +861,7 @@
 		};
 		82C32F0AA7D7241F54BAECFE5D62BE18 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 628FBFFDBB12BE39FFE4643FAF71461A /* KeychainAccess.xcconfig */;
+			baseConfigurationReference = 13769629B37033BC4733374A06AF6A66 /* KeychainAccess.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -622,7 +896,7 @@
 		};
 		95BBFC60E2176AF1544CDC154A52E536 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 628FBFFDBB12BE39FFE4643FAF71461A /* KeychainAccess.xcconfig */;
+			baseConfigurationReference = 13769629B37033BC4733374A06AF6A66 /* KeychainAccess.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -691,7 +965,7 @@
 			};
 			name = Debug;
 		};
-		D25307833D7AAB57A9C5912AAD93E49D /* Release */ = {
+		C59183D879943A4D143472C8C99152D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5FF4CCD932476478B32D07B51B31B1F7 /* Pods-settings.release.xcconfig */;
 			buildSettings = {
@@ -728,6 +1002,76 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		D9E8A8BB1D74C5DA40D9C343CAC0D27C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A1C9D4932976DCB6BBD8D8A34BF61E7 /* Toast-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2E9E547CDE342DBD94FE68E548B1AFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A1C9D4932976DCB6BBD8D8A34BF61E7 /* Toast-Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		EF26A3C5B6EDA309192C6025F703DE0A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -835,6 +1179,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9E0020566F9744D4E5040B3593A72A2A /* Build configuration list for PBXNativeTarget "Toast-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E9E547CDE342DBD94FE68E548B1AFD /* Debug */,
+				D9E8A8BB1D74C5DA40D9C343CAC0D27C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9FA048BBEA093CDB3F69C5B36929A5AF /* Build configuration list for PBXNativeTarget "KeychainAccess" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -844,11 +1197,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2222D148CD64EEE2C18432CC7EE3F0E /* Build configuration list for PBXNativeTarget "Pods-settings" */ = {
+		C179193127630FC4A0913EA2598FBE87 /* Build configuration list for PBXNativeTarget "Pods-settings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BE59F0C78EB9706934B59BEF1573650 /* Debug */,
-				D25307833D7AAB57A9C5912AAD93E49D /* Release */,
+				4AAB47219A1062403283E7C75AE6DA85 /* Debug */,
+				C59183D879943A4D143472C8C99152D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDD3C061049B7E782E960FE19C3DF454 /* Build configuration list for PBXNativeTarget "JPSVolumeButtonHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E642D1C7B6117943FDB21D4D016E97 /* Debug */,
+				156005F526D1505E525E75FE265908E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
