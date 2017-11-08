@@ -3,7 +3,6 @@
 #### Note
   - When inputting items into the table, only enter City name. It'll add temp by it's self.
   - TODO still:
-    - Background queue for API
     - App settings to store some configuration available to user
     - Indicator of when the app is connect to web service
 
