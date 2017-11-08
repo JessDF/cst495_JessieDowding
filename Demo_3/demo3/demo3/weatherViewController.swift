@@ -17,6 +17,7 @@ class weatherViewController: UIViewController {
     @IBOutlet weak var weatherLabel: UILabel!
     
     @IBOutlet weak var weatherImage: UIImageView!
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView ()
     
     
     let weather = WeatherGetter()
@@ -33,6 +34,10 @@ class weatherViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         if(retrivedCity == ""){
+            activityIndicator.center = self.view.center
+            activityIndicator.hidesWhenStopped = true
+            activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+            view.addSubview(activityIndicator)
             alertCity()
         }
         print("Retrieved passwork is: \(retrivedCity!)")
@@ -67,6 +72,7 @@ class weatherViewController: UIViewController {
                             let image = UIImage(data: imageData)
                             DispatchQueue.main.async {
                                 self.weatherImage.image = image
+                                self.activityIndicator.stopAnimating()
                             }
                         }
                     } else {
