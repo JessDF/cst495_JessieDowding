@@ -41,8 +41,3 @@ CST 495 iOS 10 and Swift 3
 
 To Do: <br>
 https://www.raywenderlich.com/166125/instruments-tutorial-swift-getting-started
-
-Note to self: <br>
-In Swift, any variable declared with the let keyword is considered a constant and is read-only and thread-safe. Declare the variable with the var keyword however, and it becomes mutable and not thread-safe unless the data type is designed to be so.
-
-The Swift collection types like Array and Dictionary are not thread-safe when declared mutable. Although many threads can read a mutable instance of Array simultaneously without issue, it’s not safe to let one thread modify the array while another is reading it. 
