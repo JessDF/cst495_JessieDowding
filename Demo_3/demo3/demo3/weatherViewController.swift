@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 class weatherViewController: UIViewController {
     
@@ -18,14 +19,17 @@ class weatherViewController: UIViewController {
     @IBOutlet weak var weatherImage: UIImageView!
     
     let weather = WeatherGetter()
+    let initalCity: Bool = KeychainWrapper.standard.set("", forKey: "userCity")
+    let retrivedCity: String? = KeychainWrapper.standard.string(forKey: "userCity")
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        weather.getWeather(city: "Marina"){
-         self.updateUI()
+        if(retrivedCity == ""){
+            alertCity()
         }
+        print("Retrieved passwork is: \(retrivedCity!)")
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,6 +44,37 @@ class weatherViewController: UIViewController {
         weatherLabel.text = weather.weather
     }
     
+    func alertCity() {
+        // Create an alert
+        let alert = UIAlertController(
+            title: "New City",
+            message: "Type in a City Name",
+            preferredStyle: .alert)
+        
+        // Add a text field to the alert for the new item's title
+        alert.addTextField(configurationHandler: nil)
+        
+        // Add a "cancel" button to the alert. This one doesn't need a handler
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        // Add a "OK" button to the alert. The handler calls addNewToDoItem()
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler:
+            { (_) in
+                // Get the title the user inserted, but only if it is not an empty string
+                if let title = alert.textFields?[0].text, title.characters.count > 0
+                {
+                    let saveSuccessful: Bool = KeychainWrapper.standard.set(title, forKey: "userCity")
+                    print("Save was successful: \(saveSuccessful)")
+                    self.weather.getWeather(city: title){
+                        self.updateUI()
+                    }
+                }
+        }))
+        
+        // Present the alert to the user
+        self.present(alert, animated: true, completion: nil)
+
+    }
     
 }
 

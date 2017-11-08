@@ -9,6 +9,8 @@ CST 495 iOS 10 and Swift 3
 * Chapter 4 - Text Input and Delegation
 * Chapter 5 - View Controllers
 * Chapter 6 - Programmatic Views
+* raywenderlich.com - Background Modes Tutorial: Getting Started
+* raywenderlich.com - Grand Central Dispatch Tutorial for Swift 3
 
 
 #### Challenges
@@ -39,5 +41,5 @@ CST 495 iOS 10 and Swift 3
 * Repository: 
 * Sources: See Readme w/in Demo_4 folder
 
-To Do: <br>
-https://www.raywenderlich.com/166125/instruments-tutorial-swift-getting-started
+### To Do:
+* https://www.raywenderlich.com/166125/instruments-tutorial-swift-getting-started
