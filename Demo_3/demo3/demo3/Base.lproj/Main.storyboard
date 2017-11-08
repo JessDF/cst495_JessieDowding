@@ -22,29 +22,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TodaysDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Niv-h1-wki">
-                                <rect key="frame" x="116.5" y="128" width="127" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todays Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Niv-h1-wki">
+                                <rect key="frame" x="121" y="86" width="133" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CurrentTemperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRS-03-XMN">
-                                <rect key="frame" x="73" y="190" width="214.5" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRS-03-XMN">
+                                <rect key="frame" x="77" y="148" width="221" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xy-9K-LKr">
-                                <rect key="frame" x="137" y="241" width="85" height="29"/>
+                                <rect key="frame" x="145" y="199" width="85" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kwo-Sa-sZU">
-                                <rect key="frame" x="60" y="293" width="240" height="47"/>
+                                <rect key="frame" x="67" y="251" width="240" height="200"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeatherState" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UST-vq-qLM">
-                                <rect key="frame" x="115.5" y="363" width="145.5" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UST-vq-qLM">
+                                <rect key="frame" x="112" y="481" width="152" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -52,18 +52,18 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.77843137250000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dRS-03-XMN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-7.5" id="49k-Tq-P8M"/>
-                            <constraint firstItem="UST-vq-qLM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Shl-fV-ebd"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UST-vq-qLM" secondAttribute="bottom" constant="226" id="UNy-a1-Evm"/>
-                            <constraint firstItem="Niv-h1-wki" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-8" id="UPt-7V-BiI"/>
-                            <constraint firstItem="kwo-Sa-sZU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-7.5" id="WyO-lO-Gw6"/>
-                            <constraint firstItem="Niv-h1-wki" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="108" id="aFR-KG-jZQ"/>
-                            <constraint firstItem="9Xy-9K-LKr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-8" id="b57-tS-0G0"/>
-                            <constraint firstItem="9Xy-9K-LKr" firstAttribute="top" secondItem="dRS-03-XMN" secondAttribute="bottom" constant="22" id="bqI-71-unO"/>
-                            <constraint firstItem="dRS-03-XMN" firstAttribute="top" secondItem="Niv-h1-wki" secondAttribute="bottom" constant="33" id="byc-Is-j70"/>
-                            <constraint firstItem="UST-vq-qLM" firstAttribute="top" secondItem="kwo-Sa-sZU" secondAttribute="bottom" constant="23" id="hs1-qE-ulx"/>
-                            <constraint firstItem="kwo-Sa-sZU" firstAttribute="top" secondItem="9Xy-9K-LKr" secondAttribute="bottom" constant="23" id="lwu-ZD-gUd"/>
-                            <constraint firstItem="kwo-Sa-sZU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="pxg-FT-fTK"/>
+                            <constraint firstItem="9Xy-9K-LKr" firstAttribute="centerX" secondItem="UST-vq-qLM" secondAttribute="centerX" id="2fZ-cX-Fbr"/>
+                            <constraint firstItem="kwo-Sa-sZU" firstAttribute="top" secondItem="9Xy-9K-LKr" secondAttribute="bottom" constant="23" id="4xB-Zf-obY"/>
+                            <constraint firstItem="9Xy-9K-LKr" firstAttribute="top" secondItem="dRS-03-XMN" secondAttribute="bottom" constant="22" id="Gvf-VQ-9iU"/>
+                            <constraint firstItem="Niv-h1-wki" firstAttribute="centerX" secondItem="dRS-03-XMN" secondAttribute="centerX" id="Npt-V0-W6l"/>
+                            <constraint firstItem="UST-vq-qLM" firstAttribute="top" secondItem="kwo-Sa-sZU" secondAttribute="bottom" constant="30" id="R0M-D7-dKL"/>
+                            <constraint firstItem="9Xy-9K-LKr" firstAttribute="centerX" secondItem="kwo-Sa-sZU" secondAttribute="centerX" id="ZO1-bh-qFI"/>
+                            <constraint firstItem="Niv-h1-wki" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="aks-2C-YLo"/>
+                            <constraint firstItem="kwo-Sa-sZU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ccu-XJ-MC7"/>
+                            <constraint firstItem="dRS-03-XMN" firstAttribute="centerX" secondItem="9Xy-9K-LKr" secondAttribute="centerX" id="imj-WR-K8p"/>
+                            <constraint firstItem="kwo-Sa-sZU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="omM-Ep-MbT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UST-vq-qLM" secondAttribute="bottom" constant="108" id="p1L-xy-aPX"/>
+                            <constraint firstItem="dRS-03-XMN" firstAttribute="top" secondItem="Niv-h1-wki" secondAttribute="bottom" constant="33" id="uQF-C0-iCQ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="oTb-pn-LuX"/>
@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="274"/>
+            <point key="canvasLocation" x="173.59999999999999" y="273.91304347826087"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="cHM-iv-eCM">

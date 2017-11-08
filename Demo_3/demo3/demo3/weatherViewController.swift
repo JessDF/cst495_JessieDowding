@@ -18,9 +18,12 @@ class weatherViewController: UIViewController {
     
     @IBOutlet weak var weatherImage: UIImageView!
     
+    
     let weather = WeatherGetter()
     let initalCity: Bool = KeychainWrapper.standard.set("", forKey: "userCity")
     let retrivedCity: String? = KeychainWrapper.standard.string(forKey: "userCity")
+    
+    
     // Creating a session object with the default configuration.
     // You can read more about it here https://developer.apple.com/reference/foundation/urlsessionconfiguration
     let session = URLSession(configuration: .default)
@@ -53,22 +56,19 @@ class weatherViewController: UIViewController {
     
     func downloadImageFunction (weatherURL: String) {
         let urlWeather = URL(string: weatherURL)!
-        // Define a download task. The download task will download the contents of the URL as a Data object and then you can do what you wish with that data.
         let downloadPicTask = session.dataTask(with: urlWeather) { (data, response, error) in
-            // The download has finished.
             if let e = error {
-                print("Error downloading cat picture: \(e)")
+                print("Error downloading weather picture: \(e)")
             } else {
-                // No errors found.
-                // It would be weird if we didn't have a response, so check for that too.
                 if let res = response as? HTTPURLResponse {
-                    print("Downloaded cat picture with response code \(res.statusCode)")
+                    print("Downloaded weather picture with response code \(res.statusCode)")
                     if let imageData = data {
-                        // Finally convert that Data into an image and do what you wish with it.
-                        let image = UIImage(data: imageData)
-                        // Do something with your image.
-                        self.weatherImage.image = image
-                        self.view.addSubview(self.weatherImage);
+                        DispatchQueue.global(qos: .userInitiated).async {
+                            let image = UIImage(data: imageData)
+                            DispatchQueue.main.async {
+                                self.weatherImage.image = image
+                            }
+                        }
                     } else {
                         print("Couldn't get image: Image is nil")
                     }
