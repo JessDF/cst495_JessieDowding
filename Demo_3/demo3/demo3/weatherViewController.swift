@@ -21,6 +21,9 @@ class weatherViewController: UIViewController {
     let weather = WeatherGetter()
     let initalCity: Bool = KeychainWrapper.standard.set("", forKey: "userCity")
     let retrivedCity: String? = KeychainWrapper.standard.string(forKey: "userCity")
+    // Creating a session object with the default configuration.
+    // You can read more about it here https://developer.apple.com/reference/foundation/urlsessionconfiguration
+    let session = URLSession(configuration: .default)
     
     
     override func viewDidLoad() {
@@ -42,8 +45,42 @@ class weatherViewController: UIViewController {
         tempLabel.text = "\(weather.temp)"
         locationLabel.text = weather.location
         weatherLabel.text = weather.weather
+        
+        
+        downloadImageFunction(weatherURL: "https://icons.wxug.com/i/c/a/partlycloudy.gif")
+
     }
     
+    func downloadImageFunction (weatherURL: String) {
+        let urlWeather = URL(string: weatherURL)!
+        // Define a download task. The download task will download the contents of the URL as a Data object and then you can do what you wish with that data.
+        let downloadPicTask = session.dataTask(with: urlWeather) { (data, response, error) in
+            // The download has finished.
+            if let e = error {
+                print("Error downloading cat picture: \(e)")
+            } else {
+                // No errors found.
+                // It would be weird if we didn't have a response, so check for that too.
+                if let res = response as? HTTPURLResponse {
+                    print("Downloaded cat picture with response code \(res.statusCode)")
+                    if let imageData = data {
+                        // Finally convert that Data into an image and do what you wish with it.
+                        let image = UIImage(data: imageData)
+                        // Do something with your image.
+                        self.weatherImage.image = image
+                        self.view.addSubview(self.weatherImage);
+                    } else {
+                        print("Couldn't get image: Image is nil")
+                    }
+                } else {
+                    print("Couldn't get response code for some reason")
+                }
+            }
+        }
+        
+        downloadPicTask.resume()
+    }
+
     func alertCity() {
         // Create an alert
         let alert = UIAlertController(
@@ -77,4 +114,3 @@ class weatherViewController: UIViewController {
     }
     
 }
-

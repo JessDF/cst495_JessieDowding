@@ -26,3 +26,5 @@ Use the following list of features as your guide:
   - Activity Indicator: https://www.youtube.com/watch?v=dLfOdObZW7k
   - https://medium.com/ios-os-x-development/securing-user-data-with-keychain-for-ios-e720e0f9a8e2
   - http://www.systeen.com/2016/11/24/weather-app-using-swift-3-alamofire-4-xcode-8/
+  - http://www.adamzucchi.com/blog/?p=282
+  - https://stackoverflow.com/questions/39813497/swift-3-display-image-from-url
