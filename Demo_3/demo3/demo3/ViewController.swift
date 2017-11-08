@@ -42,7 +42,7 @@ class ViewController: UITableViewController {
         // Create an alert
         let alert = UIAlertController(
             title: "New City",
-            message: "Insert new City for a weather",
+            message: "Type in a City Name",
             preferredStyle: .alert)
         
         // Add a text field to the alert for the new item's title
