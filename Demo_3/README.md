@@ -2,8 +2,6 @@
 
 #### Note
   - When inputting items into the table, only enter City name. It'll add temp by it's self.
-  - TODO still:
-    - Indicator of when the app is connect to web service
 
 #### Description
 Use the following list of features as your guide:
