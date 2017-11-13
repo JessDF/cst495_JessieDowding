@@ -11,6 +11,7 @@ CST 495 iOS 10 and Swift 3
 * Chapter 6 - Programmatic Views
 * raywenderlich.com - Background Modes Tutorial: Getting Started
 * raywenderlich.com - Grand Central Dispatch Tutorial for Swift 3
+* raywenderlich.com - UIActivityViewController Tutorial: Sharing Data
 
 
 #### Challenges

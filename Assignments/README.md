@@ -49,6 +49,11 @@ CST 495 iOS 10 and Swift 3
 * Starter Project - GooglyPuff
 * https://www.raywenderlich.com/148513/grand-central-dispatch-tutorial-swift-3-part-1
 
+##### raywenderlich.com - UIActivityViewController Tutorial: Sharing Data
+* Starter Project - Beer Tracker
+* https://www.raywenderlich.com/133825/uiactivityviewcontroller-tutorial
+* UIActivityViewController class which provides a clean interface for sharing and manipulating data inside your app
+
 
 #### Note to self:
 * In Swift, any variable declared with the let keyword is considered a constant and is read-only and thread-safe. Declare the variable with the var keyword however, and it becomes mutable and not thread-safe unless the data type is designed to be so.
