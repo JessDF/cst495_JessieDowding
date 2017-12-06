@@ -13,6 +13,7 @@ class ViewController: UITableViewController {
 
     //var names: [String] = []
     var people: [NSManagedObject] = []
+    var refresher: UIRefreshControl!
     
     @IBAction func addName(_ sender: Any) {
         let alert = UIAlertController(title: "New Name",
@@ -71,6 +72,16 @@ class ViewController: UITableViewController {
         title = "The List"
         tableView.register(UITableViewCell.self,
                            forCellReuseIdentifier: "Cell")
+        refresher = UIRefreshControl()
+        tableView.addSubview(refresher)
+        refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refresher.tintColor = UIColor(red: 1.00, green: 0.21, blue: 0.55, alpha: 1.0) //pink
+        refresher.addTarget(self, action: #selector(loadData), for: .valueChanged)
+    }
+    
+    func loadData() {
+        tableView.reloadData()
+        refresher.endRefreshing()
     }
     
     override func viewWillAppear(_ animated: Bool) {
