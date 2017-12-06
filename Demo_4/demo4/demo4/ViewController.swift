@@ -9,9 +9,8 @@
 import UIKit
 import CoreData
 var myIndex = 0
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
-    @IBOutlet weak var tableView: UITableView!
     //var names: [String] = []
     var people: [NSManagedObject] = []
     
@@ -97,7 +96,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    override func tableView(_ tableView: UITableView, commit editingStyle:UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
     {
         //if editingStyle == .delete {
         let peoples = people[indexPath.row]
@@ -117,18 +116,13 @@ class ViewController: UIViewController {
         }
         //}
     }
-
-
-}
-
-extension ViewController: UITableViewDataSource{
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return people.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let person = people[indexPath.row]
             
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
@@ -138,21 +132,26 @@ extension ViewController: UITableViewDataSource{
         
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        /*Not working :( */
         //getting the index path of selected row
-        let indexPath = tableView.indexPathForSelectedRow
+        //let indexPath = tableView.indexPathForSelectedRow
         
-        //getting the current cell from the index path
-        let currentCell = tableView.cellForRow(at: indexPath!)! as UITableViewCell
+        let alert = UIAlertController(title: "Edit Name",
+                                      message: "edit the name",
+                                      preferredStyle: .alert)
         
-        //getting the text of that cell
-        let currentItem = currentCell.textLabel!.text
+        //Add action that will edit and save the edit
         
-        let alertController = UIAlertController(title: "Simplified iOS", message: "You Selected " + currentItem! , preferredStyle: .alert)
-        let defaultAction = UIAlertAction(title: "Close Alert", style: .default, handler: nil)
-        alertController.addAction(defaultAction)
-        tableView.reloadRows(at: [indexPath!], with: .automatic)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default)
+        
+        alert.addTextField()
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true)
+        //tableView.reloadRows(at: [indexPath!], with: .automatic)
+        self.tableView.reloadData()
     }
 }
+

@@ -40,7 +40,7 @@ CST 495 iOS 10 and Swift 3
 * Included in folder are two other projects that were used to learn about <br> Grand Central Dispatch and running items in the background.
 
 ##### Demo 4 - Information
-* Repository: 
+* Repository: https://github.com/JessDF/cst495_JessieDowding/tree/master/Demo_4
 * Sources: See Readme w/in Demo_4 folder
 
 ### To Do:
