@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-var myIndex = 0
+
 class ViewController: UITableViewController {
 
     //var names: [String] = []
