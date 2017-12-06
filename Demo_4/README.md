@@ -28,3 +28,4 @@ And an additional list of things you can try (pick at least of couple), in no pa
   - https://www.raywenderlich.com/173972/getting-started-with-core-data-tutorial-2
   - https://www.youtube.com/watch?v=A6Wl8ySrOZI
   - https://www.appcoda.com/core-data-tutorial-update-delete/
+  - https://www.brunophilipe.com/blog/articles/swift-tutorial-mytodo/
