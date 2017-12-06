@@ -34,3 +34,4 @@ And an additional list of things you can try (pick at least of couple), in no pa
   - https://www.appcoda.com/core-data-tutorial-update-delete/
   - https://www.brunophilipe.com/blog/articles/swift-tutorial-mytodo/
   - https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/CreateATableView.html
+  - https://medium.com/yay-its-erica/implementing-uirefreshcontrol-on-tableviews-in-swift3-1e3610ae6da6
