@@ -65,6 +65,33 @@ class ViewController: UITableViewController {
             print("Could not save. \(error), \(error.userInfo)")
         }
     }
+    func edit(name: String, index: IndexPath) {
+        
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let peoples = people[index.row]
+        managedContext.delete(peoples)
+        people.remove(at: index.row)
+        tableView.deleteRows(at: [index], with: .top)
+        
+        let entity = NSEntityDescription.entity(forEntityName: "Person",
+                                                in: managedContext)!
+        
+        let person = NSManagedObject(entity: entity, insertInto: managedContext)
+        
+        person.setValue(name, forKeyPath: "name")
+        
+        do {
+            try managedContext.save()
+            people.append(person)
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -154,10 +181,24 @@ class ViewController: UITableViewController {
                                       preferredStyle: .alert)
         
         //Add action that will edit and save the edit
+
+        let saveAction = UIAlertAction(title: "Save", style: .default) {
+            [unowned self] action in
+            
+            guard let textField = alert.textFields?.first,
+                let nameToSave = textField.text else {
+                    return
+            }
+            
+            self.edit(name: nameToSave, index: (indexPath as NSIndexPath) as IndexPath)
+            self.tableView.reloadData()
+        }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .default)
         
         alert.addTextField()
+        
+        alert.addAction(saveAction)
         alert.addAction(cancelAction)
         
         present(alert, animated: true)
