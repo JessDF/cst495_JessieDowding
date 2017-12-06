@@ -79,7 +79,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Add New Item" id="HJy-eK-IjV">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Lqk-DF-Iti"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Lqk-DF-Iti">
+                            <connections>
+                                <action selector="cancel:" destination="zCF-s9-r2G" id="ZcH-N1-X0U"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="BQf-dv-YWR">
                             <connections>
                                 <action selector="save:" destination="zCF-s9-r2G" id="3Ts-Ll-5gy"/>

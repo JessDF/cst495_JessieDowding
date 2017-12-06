@@ -15,7 +15,14 @@ class addNew: UIViewController {
     @IBOutlet weak var textField: UITextField!
     
     @IBAction func save(_ sender: Any) {//UIStoryboardSegue
+        let text = textField.text ?? ""
+        if(!text.isEmpty) {
+            saveHandler()
+            dismiss(animated: true, completion: nil)
+        }
         
+    }
+    func saveHandler () {
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
                 return
@@ -36,6 +43,9 @@ class addNew: UIViewController {
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
+    }
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
