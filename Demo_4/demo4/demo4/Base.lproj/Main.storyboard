@@ -47,59 +47,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="E0T-sb-f5a" id="zDa-VH-oI9"/>
-                        <segue destination="EFu-h7-Hvx" kind="show" identifier="segue" id="OGp-VP-cob"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="840.79999999999995" y="123.68815592203899"/>
-        </scene>
-        <!--Update List-->
-        <scene sceneID="vY7-wT-TxJ">
-            <objects>
-                <viewController id="EFu-h7-Hvx" customClass="updateList" customModule="demo4" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sv2-0V-GKk"/>
-                        <viewControllerLayoutGuide type="bottom" id="bD1-Ot-RGq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pJW-Y7-0yU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwc-0c-kx6">
-                                <rect key="frame" x="37" y="209" width="38" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C1S-UG-RJ4">
-                                <rect key="frame" x="109" y="209" width="184" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="WUh-Ww-Ivb">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="CHq-6y-LdD"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jga-NX-zOE">
-                            <connections>
-                                <action selector="saveEdits:" destination="EFu-h7-Hvx" id="wTn-KT-aOI"/>
-                                <segue destination="BYZ-38-t0r" kind="push" id="f9p-fp-mDj"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="save" destination="jga-NX-zOE" id="wmL-lg-gfr"/>
-                        <outlet property="textname" destination="C1S-UG-RJ4" id="kjy-oO-ZwK"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uSH-C3-T2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1817" y="71"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hlq-zP-79H">
@@ -120,7 +72,4 @@
             <point key="canvasLocation" x="50" y="133"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="f9p-fp-mDj"/>
-    </inferredMetricsTieBreakers>
 </document>

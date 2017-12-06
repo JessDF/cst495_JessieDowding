@@ -15,7 +15,6 @@
 		EED4F4171FD5A8DF007FE3BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED4F4151FD5A8DF007FE3BE /* LaunchScreen.storyboard */; };
 		EED4F4221FD5A8E0007FE3BE /* demo4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4F4211FD5A8E0007FE3BE /* demo4Tests.swift */; };
 		EED4F42D1FD5A8E0007FE3BE /* demo4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4F42C1FD5A8E0007FE3BE /* demo4UITests.swift */; };
-		EED4F43B1FD5B918007FE3BE /* updateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4F43A1FD5B918007FE3BE /* updateList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		EED4F4281FD5A8E0007FE3BE /* demo4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demo4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED4F42C1FD5A8E0007FE3BE /* demo4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo4UITests.swift; sourceTree = "<group>"; };
 		EED4F42E1FD5A8E0007FE3BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EED4F43A1FD5B918007FE3BE /* updateList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = updateList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 				EED4F4151FD5A8DF007FE3BE /* LaunchScreen.storyboard */,
 				EED4F4181FD5A8DF007FE3BE /* Info.plist */,
 				EED4F4101FD5A8DF007FE3BE /* demo4.xcdatamodeld */,
-				EED4F43A1FD5B918007FE3BE /* updateList.swift */,
 			);
 			path = demo4;
 			sourceTree = "<group>";
@@ -267,7 +264,6 @@
 			files = (
 				EED4F40C1FD5A8DF007FE3BE /* ViewController.swift in Sources */,
 				EED4F40A1FD5A8DF007FE3BE /* AppDelegate.swift in Sources */,
-				EED4F43B1FD5B918007FE3BE /* updateList.swift in Sources */,
 				EED4F4121FD5A8DF007FE3BE /* demo4.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +511,7 @@
 				EED4F4331FD5A8E0007FE3BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EED4F4341FD5A8E0007FE3BE /* Build configuration list for PBXNativeTarget "demo4Tests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +520,7 @@
 				EED4F4361FD5A8E0007FE3BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EED4F4371FD5A8E0007FE3BE /* Build configuration list for PBXNativeTarget "demo4UITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +529,7 @@
 				EED4F4391FD5A8E0007FE3BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

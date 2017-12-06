@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class updateList: UIViewController {
+/*class updateList: UIViewController {
     var people: [NSManagedObject] = []
     @IBOutlet weak var textname: UITextField!
     let myIndex: IndexPath
@@ -42,7 +42,7 @@ class updateList: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        let person = people[myIndex]
+        //let person = people[myIndex]
         textname = person.value(forKeyPath: "name") as? String
     }
-}
+}*/
