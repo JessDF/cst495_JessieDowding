@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wqC-UR-9Xg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xZm-As-BHq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="43O-ao-vYD" id="PfC-ru-aWT">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.98097187574859857" blue="0.75193793342499837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -105,6 +105,7 @@
         <scene sceneID="CWr-Ev-4Gt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wqC-UR-9Xg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="3gc-wx-QDK"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="s8Z-rL-MEJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9PV-di-7iB">
@@ -138,5 +139,36 @@
             </objects>
             <point key="canvasLocation" x="2648.8000000000002" y="-30.134932533733135"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="j5p-oj-hv0">
+            <objects>
+                <viewController id="Bkm-uz-qS4" customClass="MapViewController" customModule="demo4" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="lbP-pb-w10"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIh-wl-J00" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1824.8" y="981.85907046476768"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xxs-el-dId">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xZm-As-BHq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="boj-DD-fBh">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Bkm-uz-qS4" kind="relationship" relationship="viewControllers" id="dIl-uS-xHv"/>
+                        <segue destination="wqC-UR-9Xg" kind="relationship" relationship="viewControllers" id="J1z-Of-KJp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6A-vu-Xzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="808"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="MapIcon" width="48" height="32"/>
+    </resources>
 </document>
