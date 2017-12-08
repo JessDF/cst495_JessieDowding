@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		408F0BAF1FD892F3007D53BA /* addNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F0BAE1FD892F3007D53BA /* addNew.swift */; };
+		EE7F2A1C1FDA11CB005D9308 /* popUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7F2A1B1FDA11CB005D9308 /* popUp.swift */; };
 		EE9FA3391FDA08C20098C621 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9FA3381FDA08C20098C621 /* MapViewController.swift */; };
 		EED4F40A1FD5A8DF007FE3BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4F4091FD5A8DF007FE3BE /* AppDelegate.swift */; };
 		EED4F40C1FD5A8DF007FE3BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4F40B1FD5A8DF007FE3BE /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		408F0BAE1FD892F3007D53BA /* addNew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addNew.swift; sourceTree = "<group>"; };
+		EE7F2A1B1FDA11CB005D9308 /* popUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popUp.swift; sourceTree = "<group>"; };
 		EE9FA3381FDA08C20098C621 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EED4F4061FD5A8DF007FE3BE /* demo4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED4F4091FD5A8DF007FE3BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				EED4F4101FD5A8DF007FE3BE /* demo4.xcdatamodeld */,
 				408F0BAE1FD892F3007D53BA /* addNew.swift */,
 				EE9FA3381FDA08C20098C621 /* MapViewController.swift */,
+				EE7F2A1B1FDA11CB005D9308 /* popUp.swift */,
 			);
 			path = demo4;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			files = (
 				EED4F40C1FD5A8DF007FE3BE /* ViewController.swift in Sources */,
 				EED4F40A1FD5A8DF007FE3BE /* AppDelegate.swift in Sources */,
+				EE7F2A1C1FDA11CB005D9308 /* popUp.swift in Sources */,
 				408F0BAF1FD892F3007D53BA /* addNew.swift in Sources */,
 				EE9FA3391FDA08C20098C621 /* MapViewController.swift in Sources */,
 				EED4F4121FD5A8DF007FE3BE /* demo4.xcdatamodeld in Sources */,

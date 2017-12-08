@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="886" y="1185"/>
         </scene>
-        <!--View Controller-->
+        <!--Pop Up-->
         <scene sceneID="zBQ-lF-4sZ">
             <objects>
-                <viewController id="r8F-zy-efy" sceneMemberID="viewController">
+                <viewController id="r8F-zy-efy" customClass="popUp" customModule="demo4" customModuleProvider="target" sceneMemberID="viewController">
                     <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="DAf-7T-0do">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -172,11 +172,21 @@
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="MHz-ZW-P36" appends="YES" id="0Yf-vf-hBI"/>
+                            </connections>
                         </view>
+                        <color key="tintColor" red="0.66397283679999997" green="0.90051452710000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <blurEffect style="light"/>
                     </visualEffectView>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ud4-A8-vN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MHz-ZW-P36">
+                    <connections>
+                        <action selector="tapGesture:" destination="r8F-zy-efy" id="pBr-eb-aEK"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1825" y="1045"/>
         </scene>
