@@ -16,7 +16,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IO1-Nc-YjY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.66397283679999997" green="0.90051452710000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="43O-ao-vYD">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -25,7 +25,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="0.98097187574859857" blue="0.75193793342499837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -34,6 +33,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Xsf-5w-zur">
+                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="iH3-EC-MTy">
+                            <connections>
+                                <action selector="playButton:" destination="MVo-5h-edc" id="qfJ-8T-xyy"/>
+                                <segue destination="r8F-zy-efy" kind="modal" modalPresentationStyle="currentContext" id="eeb-UN-QDd"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Zzj-AV-6sa">
                             <connections>
                                 <action selector="addName:" destination="MVo-5h-edc" id="IEm-h6-5g5"/>
@@ -99,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IT2-a7-uju" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3588" y="-30.134932533733135"/>
+            <point key="canvasLocation" x="3724" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CWr-Ev-4Gt">
@@ -137,7 +142,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFc-BB-SOm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2648.8000000000002" y="-30.134932533733135"/>
+            <point key="canvasLocation" x="2721" y="133"/>
         </scene>
         <!--Map-->
         <scene sceneID="j5p-oj-hv0">
@@ -147,7 +152,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIh-wl-J00" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1824.8" y="981.85907046476768"/>
+            <point key="canvasLocation" x="886" y="1185"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zBQ-lF-4sZ">
+            <objects>
+                <viewController id="r8F-zy-efy" sceneMemberID="viewController">
+                    <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="DAf-7T-0do">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="io5-gm-SSV">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oUm-A9-bwr">
+                                    <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="0.9809718757" blue="0.75193793340000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <blurEffect style="light"/>
+                    </visualEffectView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ud4-A8-vN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="1045"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xxs-el-dId">
@@ -155,6 +186,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xZm-As-BHq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="boj-DD-fBh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

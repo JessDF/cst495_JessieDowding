@@ -15,6 +15,11 @@ class ViewController: UITableViewController {
     var people: [NSManagedObject] = []
     var refresher: UIRefreshControl!
     
+    @IBAction func playButton(_ sender: Any) {
+        //Make window pop up to fill screen
+        //Add an image
+        //Use gestures to get rid of it
+    }
     @IBAction func addName(_ sender: Any) {
         let alert = UIAlertController(title: "New Name",
                message: "Add a new name",
