@@ -15,7 +15,7 @@ CST 495 iOS 10 and Swift 3
 
 
 #### Challenges
-* Challenge 1 - "?"
+* Challenge 1 - Image manipulation
 * Challenge 2 - Delgation and Notification Challenge
 * Challenge 3 - UIScrollView, UICollectionView Challenge Page
 * Challenge 4 - Web Service and GCD Challenge Page
