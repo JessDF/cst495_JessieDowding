@@ -23,10 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zFc-li-4Yw">
-                                <rect key="frame" x="3" y="249" width="369" height="350"/>
+                                <rect key="frame" x="3" y="239" width="369" height="360"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJv-aG-kab">
-                                <rect key="frame" x="16" y="36" width="324" height="31"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJv-aG-kab">
+                                <rect key="frame" x="47" y="36" width="285" height="21"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -34,29 +34,40 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaF-CV-Kbl">
                                 <rect key="frame" x="165" y="617" width="45" height="30"/>
                                 <state key="normal" title="Rotate"/>
+                                <connections>
+                                    <action selector="Rotate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Le-nC-W7f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhs-2Z-u86">
-                                <rect key="frame" x="153" y="152" width="69" height="30"/>
+                                <rect key="frame" x="153" y="142" width="69" height="30"/>
                                 <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="savePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kBP-fJ-ucT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hds-yV-ygX">
-                                <rect key="frame" x="152" y="86" width="70" height="30"/>
+                                <rect key="frame" x="152" y="76" width="70" height="30"/>
                                 <state key="normal" title="Open URL"/>
+                                <connections>
+                                    <action selector="openURL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OuB-WK-jtC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Hds-yV-ygX" firstAttribute="top" secondItem="zJv-aG-kab" secondAttribute="bottom" constant="29" id="1xP-5h-5Yi"/>
+                            <constraint firstItem="Hds-yV-ygX" firstAttribute="top" secondItem="zJv-aG-kab" secondAttribute="bottom" constant="19" id="1xP-5h-5Yi"/>
                             <constraint firstItem="uaF-CV-Kbl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4e0-Ho-JpL"/>
                             <constraint firstItem="Hds-yV-ygX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9rZ-ao-3dH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uaF-CV-Kbl" secondAttribute="bottom" constant="20" id="CfF-aK-ICh"/>
                             <constraint firstItem="zJv-aG-kab" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="Ese-on-N21"/>
                             <constraint firstItem="zFc-li-4Yw" firstAttribute="top" secondItem="nhs-2Z-u86" secondAttribute="bottom" constant="67" id="KJY-no-ac4"/>
                             <constraint firstItem="nhs-2Z-u86" firstAttribute="top" secondItem="Hds-yV-ygX" secondAttribute="bottom" constant="36" id="Q2u-U8-D3m"/>
-                            <constraint firstItem="zJv-aG-kab" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-9.5" id="YxF-zR-gc1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zJv-aG-kab" secondAttribute="trailing" constant="27" id="QfP-bI-MQs"/>
+                            <constraint firstItem="zJv-aG-kab" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2" id="YxF-zR-gc1"/>
                             <constraint firstItem="zFc-li-4Yw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZmW-3j-e0z"/>
                             <constraint firstItem="uaF-CV-Kbl" firstAttribute="top" secondItem="zFc-li-4Yw" secondAttribute="bottom" constant="18" id="hSG-0F-N5H"/>
                             <constraint firstItem="zFc-li-4Yw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="jir-f4-Vgk"/>
+                            <constraint firstItem="zJv-aG-kab" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="tpa-lt-qXD"/>
                             <constraint firstItem="nhs-2Z-u86" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zhg-bi-Akc"/>
                         </constraints>
                     </view>
