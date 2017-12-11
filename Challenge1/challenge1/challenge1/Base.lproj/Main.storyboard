@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="challenge1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zFc-li-4Yw">
+                                <rect key="frame" x="3" y="249" width="369" height="350"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJv-aG-kab">
+                                <rect key="frame" x="16" y="36" width="324" height="31"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaF-CV-Kbl">
+                                <rect key="frame" x="165" y="617" width="45" height="30"/>
+                                <state key="normal" title="Rotate"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhs-2Z-u86">
+                                <rect key="frame" x="153" y="152" width="69" height="30"/>
+                                <state key="normal" title="Download"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hds-yV-ygX">
+                                <rect key="frame" x="152" y="86" width="70" height="30"/>
+                                <state key="normal" title="Open URL"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hds-yV-ygX" firstAttribute="top" secondItem="zJv-aG-kab" secondAttribute="bottom" constant="29" id="1xP-5h-5Yi"/>
+                            <constraint firstItem="uaF-CV-Kbl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4e0-Ho-JpL"/>
+                            <constraint firstItem="Hds-yV-ygX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9rZ-ao-3dH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uaF-CV-Kbl" secondAttribute="bottom" constant="20" id="CfF-aK-ICh"/>
+                            <constraint firstItem="zJv-aG-kab" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="Ese-on-N21"/>
+                            <constraint firstItem="zFc-li-4Yw" firstAttribute="top" secondItem="nhs-2Z-u86" secondAttribute="bottom" constant="67" id="KJY-no-ac4"/>
+                            <constraint firstItem="nhs-2Z-u86" firstAttribute="top" secondItem="Hds-yV-ygX" secondAttribute="bottom" constant="36" id="Q2u-U8-D3m"/>
+                            <constraint firstItem="zJv-aG-kab" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-9.5" id="YxF-zR-gc1"/>
+                            <constraint firstItem="zFc-li-4Yw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZmW-3j-e0z"/>
+                            <constraint firstItem="uaF-CV-Kbl" firstAttribute="top" secondItem="zFc-li-4Yw" secondAttribute="bottom" constant="18" id="hSG-0F-N5H"/>
+                            <constraint firstItem="zFc-li-4Yw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="jir-f4-Vgk"/>
+                            <constraint firstItem="nhs-2Z-u86" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zhg-bi-Akc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="URL" destination="zJv-aG-kab" id="7yY-6a-LVl"/>
+                        <outlet property="myImg" destination="zFc-li-4Yw" id="ZIC-In-URk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="73.313343328335833"/>
+        </scene>
+    </scenes>
+</document>
